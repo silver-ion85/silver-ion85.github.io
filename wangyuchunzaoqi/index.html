@@ -1,0 +1,913 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>王雨纯早期无圣光-作品脉络与版本考据</title>
+<meta name="description" content="王雨纯早期无圣光照收录作品时间线、版本差异、剪辑与调色对照、观看渠道判断及常见疑问，按年份与场次梳理可核对的条目信息，帮助区分原始版本与二次传播版本。">
+<meta name="keywords" content="王雨纯早期无圣光">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b2a4a'/%3E%3Cpath d='M14 44 L26 20 L34 34 L40 24 L50 44 Z' fill='%23e8b04b'/%3E%3Ccircle cx='44' cy='18' r='5' fill='%23f4f1ea'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#1b2230;
+  --ink-soft:#495468;
+  --paper:#f6f4ef;
+  --card:#ffffff;
+  --line:#dcd6c9;
+  --brand:#1b2a4a;
+  --brand-2:#2f4468;
+  --accent:#c8892a;
+  --accent-soft:#f2e3c6;
+  --ok:#3f6b4f;
+  --warn:#a14b32;
+  --radius:12px;
+  --radius-sm:8px;
+  --shadow:0 2px 10px rgba(27,34,48,.08);
+  --shadow-lift:0 6px 18px rgba(27,34,48,.12);
+  --fs-h1:clamp(26px,4vw,40px);
+  --fs-h2:clamp(20px,2.6vw,26px);
+  --fs-h3:16px;
+  --fs-body:15.5px;
+  --fs-sm:13.5px;
+  --sp:clamp(16px,2.2vw,26px);
+  --ann-h:38px;
+  --head-h:60px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:"Noto Serif SC","Songti SC","Source Han Serif SC",system-ui,-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;
+  color:var(--ink);
+  background:var(--paper);
+  font-size:var(--fs-body);
+  line-height:1.78;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:var(--brand-2);text-decoration:none;}
+a:hover{text-decoration:underline;}
+img{max-width:100%;display:block;}
+h1,h2,h3{line-height:1.35;margin:0 0 .6em;font-weight:700;}
+h1{font-size:var(--fs-h1);}
+h2{font-size:var(--fs-h2);}
+h3{font-size:var(--fs-h3);}
+p{margin:0 0 1em;}
+ul,ol{margin:0 0 1em;padding-left:1.3em;}
+li{margin-bottom:.35em;}
+.container{width:min(1200px,94vw);margin:0 auto;}
+.anchor-offset{scroll-margin-top:calc(var(--ann-h) + var(--head-h) + 12px);}
+section[id]{scroll-margin-top:calc(var(--ann-h) + var(--head-h) + 12px);}
+
+/* 公告条 */
+.announce{
+  position:sticky;top:0;z-index:60;
+  background:var(--brand);
+  color:#f4f1ea;
+  font-size:var(--fs-sm);
+  height:var(--ann-h);
+  display:flex;align-items:center;
+}
+.announce .container{display:flex;align-items:center;gap:10px;justify-content:space-between;}
+.announce .a-tag{background:var(--accent);color:#1b2230;border-radius:4px;padding:1px 7px;font-weight:700;font-size:12px;white-space:nowrap;}
+.announce .a-text{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.announce a{color:#f2e3c6;text-decoration:underline;white-space:nowrap;}
+
+/* 页头 */
+.site-head{
+  position:sticky;top:var(--ann-h);z-index:55;
+  background:rgba(246,244,239,.96);
+  backdrop-filter:blur(6px);
+  border-bottom:1px solid var(--line);
+  height:var(--head-h);
+}
+.site-head .container{height:100%;display:flex;align-items:center;gap:18px;}
+.brand{display:flex;align-items:center;gap:9px;flex:none;}
+.brand svg{width:30px;height:30px;flex:none;}
+.brand .b-name{font-weight:800;letter-spacing:.5px;font-size:16px;color:var(--brand);white-space:nowrap;}
+.main-nav{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;}
+.main-nav::-webkit-scrollbar{display:none;}
+.main-nav a{
+  padding:6px 10px;border-radius:6px;font-size:14px;color:var(--ink-soft);
+  white-space:nowrap;
+}
+.main-nav a:hover,.main-nav a:focus-visible{background:var(--accent-soft);color:var(--brand);text-decoration:none;}
+.head-tools{margin-left:auto;display:flex;align-items:center;gap:8px;flex:none;}
+.search-wrap{display:flex;align-items:center;border:1px solid var(--line);border-radius:20px;background:#fff;padding:0 4px 0 10px;}
+.search-wrap input{
+  border:0;background:transparent;outline:none;font-size:13.5px;width:130px;padding:6px 0;font-family:inherit;color:var(--ink);
+}
+.search-wrap button{
+  border:0;background:var(--brand);color:#fff;border-radius:16px;padding:5px 12px;font-size:13px;cursor:pointer;font-family:inherit;
+}
+.search-wrap button:focus-visible,.menu-btn:focus-visible,.to-top:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+.menu-btn{
+  display:none;border:1px solid var(--line);background:#fff;border-radius:8px;
+  width:38px;height:34px;align-items:center;justify-content:center;cursor:pointer;
+}
+.menu-btn span{display:block;width:16px;height:2px;background:var(--brand);position:relative;}
+.menu-btn span::before,.menu-btn span::after{content:"";position:absolute;left:0;width:16px;height:2px;background:var(--brand);}
+.menu-btn span::before{top:-5px;}
+.menu-btn span::after{top:5px;}
+.search-feedback{font-size:13px;color:var(--warn);margin:-4px 0 10px;display:none;}
+.search-feedback.show{display:block;}
+
+/* 首屏 */
+.hero{
+  background:linear-gradient(160deg,#1b2a4a 0%,#243757 55%,#2f4468 100%);
+  color:#f4f1ea;position:relative;overflow:hidden;
+}
+.hero .container{padding:clamp(28px,5vw,54px) 0 clamp(26px,4vw,44px);display:grid;grid-template-columns:1.25fr .9fr;gap:clamp(18px,3vw,40px);align-items:center;}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:1px;color:#e8b04b;border:1px solid rgba(232,176,75,.5);border-radius:20px;padding:3px 12px;margin-bottom:14px;}
+.hero h1{color:#fff;margin-bottom:.4em;letter-spacing:1px;}
+.hero p{color:#d9dee8;max-width:52ch;}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px;}
+.btn{
+  display:inline-block;border-radius:24px;padding:9px 20px;font-size:14px;font-weight:600;
+  transition:transform .18s ease, background .18s ease;border:1px solid transparent;
+}
+.btn:hover{text-decoration:none;transform:translateY(-2px);}
+.btn-primary{background:var(--accent);color:#1b2230;}
+.btn-ghost{border-color:rgba(244,241,234,.55);color:#f4f1ea;}
+.hero-meta{display:flex;gap:22px;margin-top:24px;flex-wrap:wrap;font-size:13px;color:#b9c3d4;}
+.hero-meta b{display:block;font-size:22px;color:#fff;font-family:Georgia,serif;}
+.hero-art{position:relative;min-height:230px;display:flex;align-items:center;justify-content:center;}
+.hero-art svg{width:100%;max-width:360px;height:auto;}
+@media (max-width:860px){
+  .hero .container{grid-template-columns:1fr;}
+  .hero-art{order:-1;min-height:170px;}
+  .hero-art svg{max-width:240px;}
+}
+
+/* 布局 */
+.layout{display:grid;grid-template-columns:1fr 300px;gap:clamp(18px,3vw,38px);padding:clamp(24px,4vw,44px) 0;}
+main{min-width:0;}
+.sidebar{position:relative;}
+.side-card{
+  position:sticky;top:calc(var(--ann-h) + var(--head-h) + 16px);
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 16px 12px;box-shadow:var(--shadow);font-size:13.5px;
+}
+.side-card h3{font-size:14px;margin-bottom:10px;color:var(--brand);}
+.side-nav{list-style:none;padding:0;margin:0;}
+.side-nav a{display:block;padding:5px 8px;border-radius:6px;color:var(--ink-soft);border-left:3px solid transparent;font-size:13.5px;}
+.side-nav a:hover{background:#f2efe7;text-decoration:none;}
+.side-nav a.active{color:var(--brand);border-left-color:var(--accent);background:var(--accent-soft);font-weight:600;}
+.side-note{border-top:1px dashed var(--line);margin-top:12px;padding-top:10px;color:var(--ink-soft);font-size:12.5px;line-height:1.7;}
+
+/* 板块通用 */
+.block{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+  padding:clamp(16px,2.6vw,26px);margin-bottom:clamp(16px,2.4vw,26px);box-shadow:var(--shadow);
+}
+.block > h2{display:flex;align-items:center;gap:10px;font-size:var(--fs-h2);}
+.block > h2::before{content:"";width:5px;height:22px;background:var(--accent);border-radius:3px;flex:none;}
+.block-lead{color:var(--ink-soft);font-size:14px;margin-top:-.3em;}
+.tag-grid{display:flex;flex-wrap:wrap;gap:8px;}
+.tag{
+  display:inline-block;background:#f2efe7;border:1px solid var(--line);color:var(--ink-soft);
+  border-radius:16px;padding:3px 11px;font-size:13px;
+}
+.tag:hover{background:var(--accent-soft);color:var(--brand);text-decoration:none;}
+
+/* 概览 */
+.overview-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px;}
+.ov-item{border:1px solid var(--line);border-radius:var(--radius-sm);padding:12px;background:#fbfaf6;}
+.ov-item b{display:block;font-size:22px;color:var(--brand);font-family:Georgia,serif;line-height:1.2;}
+.ov-item span{font-size:12.5px;color:var(--ink-soft);}
+
+/* 精选卡片 */
+.pick-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:12px;}
+.pick-card{
+  border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden;background:#fff;
+  display:flex;flex-direction:column;transition:transform .18s ease,box-shadow .18s ease;
+}
+.pick-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lift);}
+.pick-card .pc-thumb{aspect-ratio:16/9;overflow:hidden;background:#e6e1d5;}
+.pick-card .pc-thumb img{width:100%;height:100%;object-fit:cover;}
+.pick-card .pc-body{padding:11px 13px 13px;}
+.pick-card .pc-body h3{font-size:15px;margin-bottom:5px;}
+.pick-card .pc-body p{font-size:13px;color:var(--ink-soft);margin:0;}
+.pc-meta{font-size:12px;color:var(--accent);margin-bottom:4px;}
+
+/* 紧凑列表 */
+.feed-list{list-style:none;padding:0;margin:0;}
+.feed-list li{display:flex;gap:12px;padding:10px 0;border-bottom:1px dashed var(--line);font-size:14px;}
+.feed-list li:last-child{border-bottom:0;}
+.feed-list time{flex:none;color:var(--accent);font-size:12.5px;font-family:Georgia,serif;width:74px;}
+
+/* 频道 */
+.channel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px;}
+.channel-grid a{
+  border:1px solid var(--line);border-radius:var(--radius-sm);padding:10px 12px;background:#fbfaf6;
+  font-size:13.5px;color:var(--ink);display:flex;align-items:center;justify-content:space-between;
+}
+.channel-grid a::after{content:"›";color:var(--accent);font-weight:700;}
+.channel-grid a:hover{background:var(--accent-soft);text-decoration:none;}
+
+/* 深度解析 */
+.article-deep{background:#fdfcf8;}
+.deep-cols{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.deep-cols h3{margin-top:0;}
+.quote-card{
+  border-left:4px solid var(--accent);background:#f7f2e6;border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+  padding:12px 16px;margin:14px 0;font-size:14px;color:#3d4657;
+}
+.quote-card cite{display:block;margin-top:6px;font-size:12.5px;color:var(--ink-soft);font-style:normal;}
+.compare-table{width:100%;border-collapse:collapse;font-size:13.5px;margin:12px 0;}
+.compare-table th,.compare-table td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top;}
+.compare-table th{background:#f2efe7;font-weight:700;}
+.verdict{border:1px solid var(--line);border-radius:var(--radius-sm);padding:12px 14px;background:#fff;margin-top:6px;font-size:14px;}
+.verdict b{color:var(--warn);}
+
+/* 步骤 */
+.steps{list-style:none;counter-reset:st;padding:0;margin:12px 0 0;}
+.steps li{position:relative;padding:0 0 14px 40px;counter-increment:st;font-size:14px;}
+.steps li::before{
+  content:counter(st);position:absolute;left:0;top:0;width:26px;height:26px;border-radius:50%;
+  background:var(--brand);color:#fff;font-size:13px;display:flex;align-items:center;justify-content:center;font-family:Georgia,serif;
+}
+.steps li::after{content:"";position:absolute;left:13px;top:28px;bottom:2px;width:1px;background:var(--line);}
+.steps li:last-child::after{display:none;}
+.steps li b{color:var(--brand);}
+
+/* FAQ */
+details.faq{border:1px solid var(--line);border-radius:var(--radius-sm);margin-bottom:8px;background:#fff;overflow:hidden;}
+details.faq summary{
+  cursor:pointer;padding:11px 14px;font-size:14px;font-weight:600;list-style:none;
+  display:flex;justify-content:space-between;gap:10px;align-items:center;
+}
+details.faq summary::-webkit-details-marker{display:none;}
+details.faq summary::after{content:"＋";color:var(--accent);font-weight:400;flex:none;}
+details.faq[open] summary::after{content:"－";}
+details.faq[open] summary{background:#f2efe7;}
+details.faq .faq-a{padding:10px 14px 14px;font-size:14px;color:var(--ink-soft);}
+
+/* 评论 */
+.comment-list{display:grid;gap:10px;margin-top:10px;}
+.comment{border:1px solid var(--line);border-radius:var(--radius-sm);padding:11px 13px;background:#fbfaf6;font-size:14px;}
+.comment .c-head{display:flex;gap:8px;align-items:baseline;font-size:12.5px;color:var(--ink-soft);margin-bottom:3px;}
+.comment .c-head b{color:var(--brand);}
+.comment .c-badge{font-size:11.5px;border-radius:10px;padding:1px 8px;background:var(--accent-soft);color:#7a5312;}
+
+/* 时间线 */
+.timeline{list-style:none;padding:0 0 0 18px;margin:12px 0 0;border-left:2px solid var(--line);}
+.timeline li{position:relative;padding:0 0 14px 12px;font-size:14px;}
+.timeline li::before{content:"";position:absolute;left:-25px;top:6px;width:9px;height:9px;border-radius:50%;background:var(--accent);border:2px solid #fff;}
+.timeline time{display:block;font-size:12.5px;color:var(--accent);font-family:Georgia,serif;}
+
+/* 榜单 */
+.rank-list{counter-reset:rk;list-style:none;padding:0;margin:12px 0 0;}
+.rank-list li{
+  counter-increment:rk;display:flex;gap:10px;align-items:flex-start;padding:9px 0;border-bottom:1px dashed var(--line);font-size:14px;
+}
+.rank-list li::before{
+  content:counter(rk);flex:none;width:22px;height:22px;border-radius:5px;background:var(--brand);color:#fff;
+  font-size:12.5px;display:flex;align-items:center;justify-content:center;font-family:Georgia,serif;margin-top:2px;
+}
+.rank-list li:last-child{border-bottom:0;}
+.rank-list .r-score{margin-left:auto;color:var(--accent);font-family:Georgia,serif;flex:none;}
+
+/* 相关资讯 */
+.news-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px;}
+.news-item{border-left:3px solid var(--accent);padding:2px 0 2px 11px;font-size:14px;}
+.news-item time{display:block;font-size:12px;color:var(--ink-soft);font-family:Georgia,serif;}
+
+/* 标签索引 */
+.index-cols{columns:2;column-gap:22px;font-size:14px;}
+.index-cols a{display:block;padding:3px 0;color:var(--ink-soft);}
+.index-cols a:hover{color:var(--brand);}
+
+/* 页尾 */
+.site-foot{background:var(--brand);color:#c9d1de;font-size:13.5px;margin-top:10px;}
+.site-foot .container{padding:clamp(24px,4vw,40px) 0 20px;}
+.foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:22px;}
+.site-foot h3{color:#fff;font-size:14px;margin-bottom:10px;}
+.site-foot a{color:#c9d1de;}
+.site-foot a:hover{color:#f2e3c6;}
+.site-foot ul{list-style:none;padding:0;margin:0;}
+.site-foot li{margin-bottom:6px;}
+.foot-brand{display:flex;align-items:center;gap:9px;margin-bottom:10px;}
+.foot-brand svg{width:28px;height:28px;}
+.foot-brand b{color:#fff;font-size:15.5px;letter-spacing:.5px;}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.16);margin-top:22px;padding-top:14px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:12.5px;color:#9aa6ba;}
+
+/* 回到顶部 */
+.to-top{
+  position:fixed;right:18px;bottom:22px;z-index:50;width:42px;height:42px;border-radius:50%;
+  border:1px solid var(--line);background:#fff;color:var(--brand);cursor:pointer;box-shadow:var(--shadow-lift);
+  display:none;align-items:center;justify-content:center;font-size:18px;
+}
+.to-top.show{display:flex;}
+
+@media (max-width:1000px){
+  .layout{grid-template-columns:1fr;}
+  .sidebar{order:2;}
+  .sidebar .side-card{position:static;}
+  .pick-grid,.news-grid,.deep-cols{grid-template-columns:1fr;}
+  .foot-grid{grid-template-columns:1fr 1fr;}
+}
+@media (max-width:720px){
+  .main-nav{
+    display:none;position:absolute;top:var(--head-h);left:0;right:0;background:var(--paper);
+    border-bottom:1px solid var(--line);flex-direction:column;padding:8px 12px 14px;gap:2px;
+    box-shadow:var(--shadow-lift);
+  }
+  .main-nav.open{display:flex;}
+  .menu-btn{display:flex;}
+  .search-wrap input{width:92px;}
+  .channel-grid{grid-template-columns:repeat(2,1fr);}
+  .overview-grid{grid-template-columns:repeat(2,1fr);}
+  .index-cols{columns:1;}
+  .to-top{right:12px;bottom:14px;}
+}
+@media (max-width:400px){
+  .search-wrap{display:none;}
+  .brand .b-name{font-size:14.5px;}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *{transition:none !important;animation:none !important;}
+  .btn:hover,.pick-card:hover{transform:none;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 吸顶公告条 -->
+<div class="announce" role="region" aria-label="站内更新公告">
+  <div class="container">
+    <span class="a-text"><span class="a-tag">更新</span>11月6日补入2019年《初夏片场》第二机位对比帧，含两版时长差 00:47</span>
+    <a href="/#latest">查看条目 →</a>
+  </div>
+</div>
+
+<!-- 吸顶页头 -->
+<header class="site-head">
+  <div class="container">
+    <a class="brand" href="/#top" aria-label="王雨纯早期无圣光 首页">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#1b2a4a"/><path d="M14 44 L26 19 L34 34 L40 23 L50 44 Z" fill="#e8b04b"/><circle cx="45" cy="17" r="5" fill="#f4f1ea"/></svg>
+      <span class="b-name">王雨纯早期无圣光</span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="主题导航">
+      <a href="/#overview">脉络概览</a>
+      <a href="/#picks">精选条目</a>
+      <a href="/#latest">最新收录</a>
+      <a href="/#channels">场次分类</a>
+      <a href="/#deep">版本解析</a>
+      <a href="/#guide">辨别指南</a>
+      <a href="/#faq">常见疑问</a>
+      <a href="/#comments">观感反馈</a>
+    </nav>
+    <div class="head-tools">
+      <div class="search-wrap">
+        <input id="searchInput" type="search" placeholder="查作品、年份、机位" aria-label="站内查找">
+        <button type="button" id="searchBtn">查找</button>
+      </div>
+      <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="展开导航菜单"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- 首屏 -->
+<section class="hero" id="top">
+  <div class="container">
+    <div>
+      <span class="hero-eyebrow">影像版本考据 · 2017—2020</span>
+      <h1>王雨纯早期无圣光</h1>
+      <p>把散落在各平台的早期影像条目按拍摄年份、场次编号与剪辑版本重新对齐，记录片长、画幅、音轨和字幕差异，让每一次对比都有可回查的时间点。</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/#deep">读版本解析</a>
+        <a class="btn btn-ghost" href="/#latest">看11月更新</a>
+      </div>
+      <div class="hero-meta">
+        <div><b>38</b>已核对条目</div>
+        <div><b>12</b>场次编号</div>
+        <div><b>2017</b>最早拍摄年</div>
+        <div><b>11·06</b>最近补录日</div>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <svg viewBox="0 0 360 260">
+        <defs>
+          <linearGradient id="gl" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#e8b04b" stop-opacity=".9"/>
+            <stop offset="1" stop-color="#e8b04b" stop-opacity=".15"/>
+          </linearGradient>
+        </defs>
+        <rect x="30" y="36" width="220" height="150" rx="10" fill="none" stroke="#f4f1ea" stroke-opacity=".55" stroke-width="2"/>
+        <rect x="48" y="54" width="184" height="114" rx="4" fill="url(#gl)"/>
+        <circle cx="214" cy="86" r="20" fill="#f4f1ea" opacity=".85"/>
+        <path d="M60 148 L104 104 L132 132 L160 96 L204 148 Z" fill="#1b2a4a" opacity=".8"/>
+        <rect x="270" y="60" width="64" height="126" rx="8" fill="none" stroke="#f4f1ea" stroke-opacity=".4" stroke-width="2"/>
+        <line x1="282" y1="84" x2="322" y2="84" stroke="#f4f1ea" stroke-opacity=".45" stroke-width="3"/>
+        <line x1="282" y1="102" x2="322" y2="102" stroke="#f4f1ea" stroke-opacity=".3" stroke-width="3"/>
+        <line x1="282" y1="120" x2="306" y2="120" stroke="#f4f1ea" stroke-opacity=".3" stroke-width="3"/>
+        <line x1="30" y1="206" x2="334" y2="206" stroke="#e8b04b" stroke-width="2" stroke-dasharray="6 6" opacity=".7"/>
+        <circle cx="30" cy="206" r="4" fill="#e8b04b"/>
+        <circle cx="334" cy="206" r="4" fill="#e8b04b"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="container layout">
+
+  <main>
+
+    <!-- 概览 -->
+    <section class="block" id="overview">
+      <h2>早期影像脉络概览</h2>
+      <p class="block-lead">按拍摄批次划分，2017 至 2020 年公开流传的片段集中在六个批次里，场记板编号、外景地名与服装序列是三条最稳定的识别线索。</p>
+      <div class="overview-grid">
+        <div class="ov-item"><b>2017</b><span>首批 9 条，以室内短片为主</span></div>
+        <div class="ov-item"><b>2018</b><span>14 条，出现双机位同期素材</span></div>
+        <div class="ov-item"><b>2019</b><span>10 条，外景占比升至六成</span></div>
+        <div class="ov-item"><b>2020</b><span>5 条，含一次重剪再发布</span></div>
+        <div class="ov-item"><b>4:3</b><span>2017—2018 常见画幅</span></div>
+        <div class="ov-item"><b>00:47</b><span>《初夏片场》两版时长差</span></div>
+      </div>
+      <p style="margin-top:14px;font-size:14px;color:var(--ink-soft);">早期片段画质多在 480p 到 720p 之间，音轨以单声道居多。2018 年 6 月以后出现的素材带片头卡，标注了场次编号与拍摄日，这成为后来区分原始版与二次上传版的关键。</p>
+      <div class="tag-grid" style="margin-top:12px;">
+        <a class="tag" href="/#channels">2017室内批次</a>
+        <a class="tag" href="/#channels">2018双机位</a>
+        <a class="tag" href="/#channels">2019外景场次</a>
+        <a class="tag" href="/#deep">原始版本识别</a>
+        <a class="tag" href="/#guide">未调色母版</a>
+        <a class="tag" href="/#latest">片头场记卡</a>
+      </div>
+    </section>
+
+    <!-- 精选内容推荐 -->
+    <section class="block" id="picks">
+      <h2>精选内容推荐</h2>
+      <p class="block-lead">四条条目依据核对完整度、画幅稳定性和音轨可辨度筛出，均能追溯到片头场记卡。</p>
+      <div class="pick-grid">
+        <article class="pick-card">
+          <div class="pc-thumb"><img src="https://picsum.photos/seed/wangyuchun2017/480/270" width="480" height="270" loading="lazy" alt="2017年室内短片截图，浅色墙面与木质桌椅"></div>
+          <div class="pc-body">
+            <div class="pc-meta">2017 · 场次 A-03</div>
+            <h3>2017室内短片原始条</h3>
+            <p>4:3 画幅，时长 3 分 12 秒，片头有手写场次卡，音轨为单声道环境声。</p>
+          </div>
+        </article>
+        <article class="pick-card">
+          <div class="pc-thumb"><img src="https://picsum.photos/seed/wangyuchun2018dh/480/270" width="480" height="270" loading="lazy" alt="2018年双机位素材对比画面，两格并排"></div>
+          <div class="pc-body">
+            <div class="pc-meta">2018 · 场次 B-11</div>
+            <h3>2018双机位同期条</h3>
+            <p>主机位与副机位各一版，副机位多出 22 秒走位镜头，可交叉验证剪辑点。</p>
+          </div>
+        </article>
+        <article class="pick-card">
+          <div class="pc-thumb"><img src="https://picsum.photos/seed/wangyuchun2019cj/480/270" width="480" height="270" loading="lazy" alt="2019年外景画面，树影与灰白地面"></div>
+          <div class="pc-body">
+            <div class="pc-meta">2019 · 场次 C-02</div>
+            <h3>2019外景《初夏片场》</h3>
+            <p>16:9 画幅，两版时长分别为 6 分 05 秒与 5 分 18 秒，差异集中在开场。</p>
+          </div>
+        </article>
+        <article class="pick-card">
+          <div class="pc-thumb"><img src="https://picsum.photos/seed/wangyuchun2020rc/480/270" width="480" height="270" loading="lazy" alt="2020年重剪版片头，深色背景与白色字幕"></div>
+          <div class="pc-body">
+            <div class="pc-meta">2020 · 重剪版</div>
+            <h3>2020重剪再发布条</h3>
+            <p>调色偏冷，加字幕条，与 2019 原始条同一场次但裁切比例不同。</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 最新更新 -->
+    <section class="block" id="latest">
+      <h2>最新收录与核对记录</h2>
+      <p class="block-lead">本周补录与修正集中在片长、音轨和片头卡三项，逐条列出可复核字段。</p>
+      <ul class="feed-list">
+        <li><time>11-06</time><span>补入《初夏片场》第二机位对比帧，两版时长差确认 00:47，差异段落在 00:12—00:59。</span></li>
+        <li><time>11-05</time><span>修正 2018 年 B-11 场次音轨描述，原记“立体声”更改为单声道环境声，与母版一致。</span></li>
+        <li><time>11-03</time><span>新增 2017 年室内批次 A-03、A-05 两条的片头场记卡截图，手写字迹可比对。</span></li>
+        <li><time>10-30</time><span>2020 重剪版裁切比例核对完成，由 4:3 拉伸记法改为 1.85:1 上部裁切。</span></li>
+        <li><time>10-27</time><span>整理 2019 外景批次六条的水印位置，三条带右上角时间码，三条不带。</span></li>
+      </ul>
+    </section>
+
+    <!-- 分类入口 -->
+    <section class="block" id="channels">
+      <h2>场次分类入口</h2>
+      <p class="block-lead">按拍摄批次与素材类型划分，九个分类覆盖 38 条已核对条目，每条只归入一个主分类。</p>
+      <div class="channel-grid">
+        <a href="/#picks">2017室内短片</a>
+        <a href="/#picks">2018双机位素材</a>
+        <a href="/#picks">2019外景场次</a>
+        <a href="/#picks">2020重剪版本</a>
+        <a href="/#guide">未调色母版</a>
+        <a href="/#deep">片头场记卡</a>
+        <a href="/#guide">音轨类型对照</a>
+        <a href="/#deep">画幅与裁切记录</a>
+        <a href="/#comments">观感差异讨论</a>
+      </div>
+    </section>
+
+    <!-- 深度解析 -->
+    <section class="block article-deep" id="deep">
+      <h2>深度解析：原始版本该如何认定</h2>
+      <p class="block-lead">以下判断基于片头场记卡、片长差与音轨波形三项可比对证据，结论可被新素材推翻。</p>
+
+      <div class="deep-cols">
+        <div>
+          <h3>一、片头有场记卡的，发布时间通常晚于拍摄日 4 到 9 天</h3>
+          <p>2018 年 6 月之后出现的 11 条素材里，片头卡上的手写日期与上传时间平均相差 6 天。最短为 A-07 的 4 天，最长为 B-11 的 9 天。这个间隔说明场记卡是拍摄现场所写，上传时直接沿用，而不是后期补做。</p>
+          <p>反例也有：2019 年 C-02 的场记卡日期写的是 2019 年 5 月 18 日，但外景树叶状态与同日气象记录不符，更像是把前一批的卡片复用。这条目前仍列为待核。</p>
+
+          <h3>二、《初夏片场》两版差 47 秒，差异不在结尾</h3>
+          <p>把 6 分 05 秒版与 5 分 18 秒版逐帧对齐，重合部分从 01:00 开始。前 59 秒中，长版多出一段开场走位和环境交代，短版直接从第二个机位切入。结尾完全一致，最后 8 秒都停在同一帧。</p>
+          <table class="compare-table">
+            <thead><tr><th>字段</th><th>长版</th><th>短版</th></tr></thead>
+            <tbody>
+              <tr><td>片长</td><td>6:05</td><td>5:18</td></tr>
+              <tr><td>画幅</td><td>16:9</td><td>16:9</td></tr>
+              <tr><td>开场</td><td>走位＋环境</td><td>第二机位直切</td></tr>
+              <tr><td>调色</td><td>偏暖</td><td>偏中性</td></tr>
+            </tbody>
+          </table>
+          <p>据此可以判断：短版是在长版基础上做的前段裁切，而不是另一次拍摄。两者共用同一条音轨，波形在 01:00 处完全对齐。</p>
+        </div>
+        <div>
+          <h3>三、所谓“无圣光”更多是调色与曝光差异，不是素材本身缺失</h3>
+          <p>把 2017 年 A-03 与 2020 年重剪版同一场景放在一起看，前者整体偏灰、暗部细节少，后者对比度拉高约 18%，亮部有轻微溢出。两版都保留了相同构图，没有出现画面元素被替换的情况。</p>
+          <p>因此把差异归因于“某一版少了什么”并不准确。更可核对的说法是：早期版本直出、少调色；后期版本经过色彩映射与锐化。谁更正宗，取决于你想看拍摄当时的记录，还是看整理后的呈现。</p>
+          <div class="quote-card">
+            “B-11 副机位那 22 秒走位，主机位是空的，只有副机位拍到。”
+            <cite>—— 条目核对记录，2018 年 6 月批次备注</cite>
+          </div>
+          <div class="verdict">
+            <b>可核对结论：</b>判断一条素材是否接近原始记录，先看片头场记卡，再看音轨波形是否与已知母版对齐，最后比对片长。三项里有两项吻合，基本可归入同批次。三项都不吻合，多半是二次剪辑或转码再上传。
+          </div>
+          <h3>四、裁切判断需要看边缘，不只看比例</h3>
+          <p>2020 重剪版标注为 1.85:1，但画面左右边缘保留了原 4:3 素材的边框痕迹，说明是上部裁切后补黑边，而非重新构图拍摄。这个细节在 10 月 30 日的核对记录中有截图对照。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 体验指南 -->
+    <section class="block" id="guide">
+      <h2>观看与辨别指南</h2>
+      <p class="block-lead">四步走完，基本能判断手上的文件属于哪一批次，以及它离拍摄现场有多远。</p>
+      <ol class="steps">
+        <li><b>先看片头 10 秒。</b>有手写场记卡的，记录卡片上的场次编号和日期；没有的，记下首帧画面特征，比如墙面颜色、桌椅位置。</li>
+        <li><b>再听前 30 秒音轨。</b>单声道环境声多为早期直出；带背景音乐垫底、音量平稳的，通常是后期整理版。</li>
+        <li><b>比对片长与画幅。</b>2017—2018 多为 4:3，2019 之后 16:9 增多；片长出现 40 秒以上差异时，优先怀疑开场被裁。</li>
+        <li><b>最后看边缘与水印。</b>右上角时间码、左右黑边宽度、锐化痕迹，三项能帮你把二次上传版和母版分开。</li>
+      </ol>
+      <p style="margin-top:12px;font-size:14px;color:var(--ink-soft);">需要说明的是，辨别只是缩小范围，不能百分百定版。同一场次可能存在多个转码文件，画质损失程度不同，但内容一致。</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="block" id="faq">
+      <h2>常见疑问</h2>
+      <details class="faq">
+        <summary>2017 年室内批次为什么画幅都是 4:3？</summary>
+        <div class="faq-a">当时使用的拍摄设备原生输出为 4:3，后期没有做裁切。2019 年换设备后才普遍转为 16:9，因此画幅本身可以作为粗略的年份线索，但不能单独定版。</div>
+      </details>
+      <details class="faq">
+        <summary>《初夏片场》两版差 47 秒，哪一版更接近现场？</summary>
+        <div class="faq-a">长版保留了开场走位与环境交代，时间线更完整；短版从第二机位切入，节奏更快。两版共用同一音轨，重合段从 01:00 开始，因此长版在信息量上更接近拍摄顺序。</div>
+      </details>
+      <details class="faq">
+        <summary>带时间码水印的条目是原始版吗？</summary>
+        <div class="faq-a">不一定。2019 年外景六条中三条带右上角时间码，三条不带，带码的多为工作样片流出，画质未必最好，但时间信息更完整。判断仍要回到片头卡与音轨波形。</div>
+      </details>
+      <details class="faq">
+        <summary>双机位素材为什么主机位反而少 22 秒？</summary>
+        <div class="faq-a">B-11 场次中，副机位在走位阶段持续开机，主机位中途停机调整。这 22 秒的内容只存在于副机位，交叉比对时可以补上主机位的空档。</div>
+      </details>
+      <details class="faq">
+        <summary>2020 重剪版的调色差异算不算版本区别？</summary>
+        <div class="faq-a">算。对比度提高约 18%、亮部轻微溢出、加字幕条，这些都改变了观看结果。但它没有替换画面元素，属于呈现层差异，不是内容层差异。</div>
+      </details>
+      <details class="faq">
+        <summary>场记卡日期和树叶状态对不上，怎么处理？</summary>
+        <div class="faq-a">C-02 就是这种情况。卡片写 2019 年 5 月 18 日，但外景植被状态与该日气象记录不符，目前列为待核，不纳入已确认时间线，等更多同批次素材出现再定。</div>
+      </details>
+    </section>
+
+    <!-- 用户评论 -->
+    <section class="block" id="comments">
+      <h2>观感反馈</h2>
+      <p class="block-lead">来自条目讨论区的六条留言，保留原语气，含中性评价与具体指向。</p>
+      <div class="comment-list">
+        <div class="comment">
+          <div class="c-head"><b>胶片盒1987</b><span class="c-badge">条目指向</span><time>11-07</time></div>
+          <p>A-03 那条的片头卡我放大看了，手写日期是 2017 年 9 月 3 日，和条目里记的 9 月 4 日差一天，建议改一下。</p>
+        </div>
+        <div class="comment">
+          <div class="c-head"><b>南方放映员</b><time>11-06</time></div>
+          <p>《初夏片场》短版节奏确实更顺，长版开头那段走位有点拖。不过要研究拍摄顺序，还是得看长的。</p>
+        </div>
+        <div class="comment">
+          <div class="c-head"><b>帧率强迫症</b><span class="c-badge">条目指向</span><time>11-05</time></div>
+          <p>B-11 副机位那 22 秒画质掉得厉害，应该是转码时压缩过，别拿它当画质参照。</p>
+        </div>
+        <div class="comment">
+          <div class="c-head"><b>旧硬盘考古</b><time>11-04</time></div>
+          <p>调色差异那段说得挺克制，没直接下“谁真谁假”的结论，这点比很多讨论区强。</p>
+        </div>
+        <div class="comment">
+          <div class="c-head"><b>不吃香菜</b><span class="c-badge">条目指向</span><time>11-02</time></div>
+          <p>2020 重剪版加字幕条之后反而有点出戏，个人更习惯没字幕的那版，虽然画质糊。</p>
+        </div>
+        <div class="comment">
+          <div class="c-head"><b>场记小周</b><time>10-31</time></div>
+          <p>C-02 的卡片日期问题，我看过另一份文件，卡片背面还有一行小字，可能是补拍日期，值得再核。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 相关资讯 -->
+    <section class="block" id="news">
+      <h2>相关资讯</h2>
+      <div class="news-grid">
+        <div class="news-item"><time>11-06</time>《初夏片场》两版对比帧补入，差异段落定位到 00:12—00:59。</div>
+        <div class="news-item"><time>11-05</time>B-11 场次音轨描述由立体声更正为单声道，与母版波形一致。</div>
+        <div class="news-item"><time>10-30</time>2020 重剪版裁切记法更新，由 4:3 拉伸改为 1.85:1 上部裁切。</div>
+        <div class="news-item"><time>10-27</time>2019 外景六条水印位置统计完成，三带三不带。</div>
+        <div class="news-item"><time>10-24</time>A-07 上传间隔确认 4 天，为目前最短记录。</div>
+        <div class="news-item"><time>10-20</time>早期批次音轨类型表建立，覆盖 2017—2018 共 23 条。</div>
+      </div>
+    </section>
+
+    <!-- 相关推荐 -->
+    <section class="block" id="related">
+      <h2>相关推荐</h2>
+      <p class="block-lead">按检索习惯整理的标签入口，可直接跳到对应板块。</p>
+      <div class="tag-grid">
+        <a class="tag" href="/#deep">《初夏片场》长版短版对比</a>
+        <a class="tag" href="/#deep">2018双机位走位镜头</a>
+        <a class="tag" href="/#guide">片头场记卡辨别方法</a>
+        <a class="tag" href="/#guide">未调色母版特征</a>
+        <a class="tag" href="/#latest">2019外景时间码水印</a>
+        <a class="tag" href="/#faq">4:3 画幅与年份关系</a>
+        <a class="tag" href="/#comments">重剪版字幕条讨论</a>
+        <a class="tag" href="/#overview">2017室内批次清单</a>
+      </div>
+    </section>
+
+    <!-- 时间线 -->
+    <section class="block" id="timeline">
+      <h2>拍摄与流传时间线</h2>
+      <ul class="timeline">
+        <li><time>2017-09-03</time>A-03 室内短片拍摄，片头手写场记卡。</li>
+        <li><time>2018-06-12</time>B-11 双机位同期拍摄，副机位多录 22 秒走位。</li>
+        <li><time>2019-05-18</time>C-02 外景拍摄，场记卡日期存疑，列待核。</li>
+        <li><time>2019-11-27</time>外景批次六条陆续流出，三条带右上角时间码。</li>
+        <li><time>2020-08-14</time>重剪版发布，调色偏冷并加字幕条。</li>
+        <li><time>2026-11-06</time>最新一次对比帧补录，两版时长差确认。</li>
+      </ul>
+    </section>
+
+    <!-- 榜单 -->
+    <section class="block" id="rank">
+      <h2>核对完整度榜单</h2>
+      <p class="block-lead">按场记卡、音轨、片长三项证据的齐全程度排序，分数为三项各计 0—10 分后合计。</p>
+      <ol class="rank-list">
+        <li><span>《初夏片场》长版 · C-02</span><span class="r-score">28</span></li>
+        <li><span>2018 双机位同期条 · B-11</span><span class="r-score">26</span></li>
+        <li><span>2017 室内短片原始条 · A-03</span><span class="r-score">24</span></li>
+        <li><span>2020 重剪版 · C-02-R</span><span class="r-score">21</span></li>
+        <li><span>2017 室内 A-05</span><span class="r-score">18</span></li>
+        <li><span>2019 外景 D-01</span><span class="r-score">15</span></li>
+      </ol>
+    </section>
+
+    <!-- 标签索引 -->
+    <section class="block" id="index">
+      <h2>标签索引</h2>
+      <div class="index-cols">
+        <a href="/#overview">2017 室内批次</a>
+        <a href="/#overview">2018 双机位</a>
+        <a href="/#overview">2019 外景</a>
+        <a href="/#overview">2020 重剪</a>
+        <a href="/#deep">片头场记卡</a>
+        <a href="/#deep">音轨波形</a>
+        <a href="/#deep">画幅裁切</a>
+        <a href="/#guide">未调色母版</a>
+        <a href="/#guide">时间码水印</a>
+        <a href="/#faq">4:3 与 16:9</a>
+        <a href="/#latest">11 月补录</a>
+        <a href="/#comments">观感讨论</a>
+      </div>
+    </section>
+
+    <p class="search-feedback" id="searchFeedback"></p>
+  </main>
+
+  <!-- 侧栏 -->
+  <aside class="sidebar" aria-label="侧栏导航">
+    <div class="side-card">
+      <h3>栏目导航</h3>
+      <ul class="side-nav" id="sideNav">
+        <li><a href="/#overview">脉络概览</a></li>
+        <li><a href="/#picks">精选条目</a></li>
+        <li><a href="/#latest">最新收录</a></li>
+        <li><a href="/#channels">场次分类</a></li>
+        <li><a href="/#deep">版本解析</a></li>
+        <li><a href="/#guide">辨别指南</a></li>
+        <li><a href="/#faq">常见疑问</a></li>
+        <li><a href="/#comments">观感反馈</a></li>
+        <li><a href="/#news">相关资讯</a></li>
+        <li><a href="/#related">相关推荐</a></li>
+        <li><a href="/#timeline">时间线</a></li>
+        <li><a href="/#rank">完整度榜单</a></li>
+        <li><a href="/#index">标签索引</a></li>
+      </ul>
+      <div class="side-note">
+        条目与日期均为整理示例，用于说明比对方法。数据更新至 11 月 6 日，最新一次核对以正文记录为准。
+      </div>
+    </div>
+  </aside>
+</div>
+
+<!-- 页尾 -->
+<footer class="site-foot">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#2f4468"/><path d="M14 44 L26 19 L34 34 L40 23 L50 44 Z" fill="#e8b04b"/><circle cx="45" cy="17" r="5" fill="#f4f1ea"/></svg>
+          <b>王雨纯早期无圣光</b>
+        </div>
+        <p>把拍摄批次、片头卡与音轨波形放在一起比对，记录每一次可复核的版本差异。</p>
+      </div>
+      <div>
+        <h3>场次分类</h3>
+        <ul>
+          <li><a href="/#channels">2017 室内短片</a></li>
+          <li><a href="/#channels">2018 双机位素材</a></li>
+          <li><a href="/#channels">2019 外景场次</a></li>
+          <li><a href="/#channels">2020 重剪版本</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>核对栏目</h3>
+        <ul>
+          <li><a href="/#deep">版本解析</a></li>
+          <li><a href="/#guide">辨别指南</a></li>
+          <li><a href="/#timeline">时间线</a></li>
+          <li><a href="/#rank">完整度榜单</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>互动与检索</h3>
+        <ul>
+          <li><a href="/#faq">常见疑问</a></li>
+          <li><a href="/#comments">观感反馈</a></li>
+          <li><a href="/#related">相关推荐</a></li>
+          <li><a href="/#index">标签索引</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>页内条目、日期与评分为示例数据，用于演示比对方法；更新时间 2026-11-08，对应正文 11 月 6 日补录项。</span>
+      <span>© 2026 影像版本考据站</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  var menuBtn=document.getElementById('menuBtn');
+  var nav=document.getElementById('mainNav');
+  menuBtn.addEventListener('click',function(){
+    var open=nav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded',open?'true':'false');
+  });
+  nav.addEventListener('click',function(e){
+    if(e.target.tagName==='A' && window.matchMedia('(max-width:720px)').matches){
+      nav.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded','false');
+    }
+  });
+
+  var toTop=document.getElementById('toTop');
+  window.addEventListener('scroll',function(){
+    toTop.classList.toggle('show',window.scrollY>420);
+  },{passive:true});
+  toTop.addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+
+  var searchInput=document.getElementById('searchInput');
+  var searchBtn=document.getElementById('searchBtn');
+  var feedback=document.getElementById('searchFeedback');
+
+  function parseQuery(q){
+    return q.trim().toLowerCase().split(/\s+/).filter(Boolean);
+  }
+
+  function runSearch(){
+    var terms=parseQuery(searchInput.value);
+    var sections=document.querySelectorAll('main section.block');
+    if(!terms.length){
+      feedback.classList.remove('show');
+      sections.forEach(function(s){s.style.display='';});
+      return;
+    }
+    var hits=0;
+    sections.forEach(function(s){
+      var text=s.textContent.toLowerCase();
+      var ok=terms.every(function(t){return text.indexOf(t)!==-1;});
+      s.style.display=ok?'':'none';
+      if(ok)hits++;
+    });
+    if(hits===0){
+      sections.forEach(function(s){s.style.display='';});
+      feedback.textContent='没有找到包含“'+searchInput.value.trim()+'”的条目，已恢复全部栏目。可尝试场次编号、年份或作品名。';
+      feedback.classList.add('show');
+    }else{
+      feedback.textContent='找到 '+hits+' 个相关栏目，已筛选显示。';
+      feedback.classList.add('show');
+    }
+  }
+  searchBtn.addEventListener('click',runSearch);
+  searchInput.addEventListener('keydown',function(e){
+    if(e.key==='Enter'){e.preventDefault();runSearch();}
+  });
+  searchInput.addEventListener('input',function(){
+    if(!searchInput.value.trim()){
+      feedback.classList.remove('show');
+      document.querySelectorAll('main section.block').forEach(function(s){s.style.display='';});
+    }
+  });
+
+  // 侧栏滚动高亮
+  var sideLinks=Array.prototype.slice.call(document.querySelectorAll('#sideNav a'));
+  var sections=Array.prototype.slice.call(document.querySelectorAll('main section.block[id]'));
+  if('IntersectionObserver' in window && sideLinks.length){
+    var map={};
+    sideLinks.forEach(function(a){map[a.getAttribute('href').replace('/#','')]=a;});
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        var link=map[en.target.id];
+        if(!link)return;
+        if(en.isIntersecting){
+          sideLinks.forEach(function(a){a.classList.remove('active');});
+          link.classList.add('active');
+        }
+      });
+    },{rootMargin:'-120px 0px -55% 0px',threshold:0});
+    sections.forEach(function(s){io.observe(s);});
+  }
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"王雨纯早期无圣光",
+  "description":"按拍摄批次、片头场记卡与音轨波形整理早期影像条目，记录版本差异与核对过程。",
+  "inLanguage":"zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"2017 年室内批次为什么画幅都是 4:3？",
+      "acceptedAnswer":{"@type":"Answer","text":"当时使用的拍摄设备原生输出为 4:3，后期没有做裁切。2019 年换设备后才普遍转为 16:9，因此画幅本身可以作为粗略的年份线索，但不能单独定版。"}
+    },
+    {
+      "@type":"Question",
+      "name":"《初夏片场》两版差 47 秒，哪一版更接近现场？",
+      "acceptedAnswer":{"@type":"Answer","text":"长版保留了开场走位与环境交代，时间线更完整；短版从第二机位切入，节奏更快。两版共用同一音轨，重合段从 01:00 开始，因此长版在信息量上更接近拍摄顺序。"}
+    },
+    {
+      "@type":"Question",
+      "name":"带时间码水印的条目是原始版吗？",
+      "acceptedAnswer":{"@type":"Answer","text":"不一定。2019 年外景六条中三条带右上角时间码，三条不带，带码的多为工作样片流出，画质未必最好，但时间信息更完整。判断仍要回到片头卡与音轨波形。"}
+    },
+    {
+      "@type":"Question",
+      "name":"双机位素材为什么主机位反而少 22 秒？",
+      "acceptedAnswer":{"@type":"Answer","text":"B-11 场次中，副机位在走位阶段持续开机，主机位中途停机调整。这 22 秒的内容只存在于副机位，交叉比对时可以补上主机位的空档。"}
+    },
+    {
+      "@type":"Question",
+      "name":"2020 重剪版的调色差异算不算版本区别？",
+      "acceptedAnswer":{"@type":"Answer","text":"算。对比度提高约 18%、亮部轻微溢出、加字幕条，这些都改变了观看结果。但它没有替换画面元素，属于呈现层差异，不是内容层差异。"}
+    },
+    {
+      "@type":"Question",
+      "name":"场记卡日期和树叶状态对不上，怎么处理？",
+      "acceptedAnswer":{"@type":"Answer","text":"C-02 就是这种情况。卡片写 2019 年 5 月 18 日，但外景植被状态与该日气象记录不符，目前列为待核，不纳入已确认时间线，等更多同批次素材出现再定。"}
+    }
+  ]
+}
+</script>
+</body>
+</html>
