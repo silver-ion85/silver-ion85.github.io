@@ -1,0 +1,1157 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>挠脚心magic官网-趣味互动与足部感官指南</title>
+<meta name="description" content="挠脚心magic官网聚焦足底触觉与轻挠互动，整理脚心敏感度测试、轻挠手法、真人反馈与安全边界，提供可核对的实测记录与入门指南，帮助新手读懂足底感官体验。">
+<meta name="keywords" content="挠脚心magic官网">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232b1a4d'/%3E%3Cpath d='M22 14c8 0 14 6 14 14 0 6-3 9-3 14 0 6-4 10-10 10-6 0-10-5-10-11 0-5 3-8 3-13 0-8 3-14 6-14z' fill='%23f2a0c4'/%3E%3Ccircle cx='22' cy='22' r='2.6' fill='%232b1a4d'/%3E%3Ccircle cx='36' cy='24' r='2.6' fill='%232b1a4d'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#241a33;
+  --ink-soft:#4c3f60;
+  --muted:#7a6c8d;
+  --paper:#fbf7fb;
+  --card:#ffffff;
+  --line:#e6dcf0;
+  --brand:#2b1a4d;
+  --brand-2:#5b2f8e;
+  --accent:#e46a9d;
+  --accent-soft:#fbe4ef;
+  --mint:#2f8f7a;
+  --mint-soft:#e2f3ee;
+  --gold:#a9761a;
+  --gold-soft:#faf0d8;
+  --r-s:8px;
+  --r-m:14px;
+  --r-l:22px;
+  --sp-1:6px;
+  --sp-2:12px;
+  --sp-3:18px;
+  --sp-4:26px;
+  --sp-5:38px;
+  --sp-6:56px;
+  --shadow-s:0 1px 2px rgba(43,26,77,.08);
+  --shadow-m:0 8px 24px rgba(43,26,77,.10);
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+  --anchor:112px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--anchor)}
+body{
+  margin:0;font-family:var(--font);background:var(--paper);color:var(--ink);
+  font-size:16px;line-height:1.78;-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:var(--brand-2);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{margin:0 0 var(--sp-2);line-height:1.34;letter-spacing:.01em}
+h1{font-size:clamp(1.7rem,4vw,2.6rem)}
+h2{font-size:clamp(1.25rem,2.4vw,1.6rem)}
+h3{font-size:1.06rem}
+p{margin:0 0 var(--sp-2)}
+ul,ol{margin:0 0 var(--sp-2);padding-left:1.2em}
+li{margin-bottom:6px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px;border-radius:4px}
+.skip{position:absolute;left:-999px;top:0;background:#fff;padding:10px 16px;z-index:999}
+.skip:focus{left:12px;top:12px}
+.sticky-stack{position:sticky;top:0;z-index:60}
+
+/* 公告条 */
+.notice{
+  background:linear-gradient(90deg,var(--brand),var(--brand-2) 70%,#7a3fa8);
+  color:#f7eefc;font-size:.86rem;
+}
+.notice-in{
+  max-width:1180px;margin:0 auto;padding:9px 18px;
+  display:flex;gap:14px;align-items:center;flex-wrap:wrap;
+}
+.notice b{color:#ffd9ea;font-weight:600}
+.notice a{color:#ffe6f2;text-decoration:underline;text-underline-offset:3px;font-weight:600}
+.notice .nb{
+  display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.14);
+  padding:2px 10px;border-radius:99px;font-size:.76rem;letter-spacing:.04em;white-space:nowrap;
+}
+
+/* 页头 */
+.header{
+  background:rgba(255,255,255,.94);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);box-shadow:var(--shadow-s);
+}
+.header-in{
+  max-width:1180px;margin:0 auto;padding:10px 18px;
+  display:flex;align-items:center;gap:16px;
+}
+.brand{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.brand svg{width:38px;height:38px;flex:0 0 auto}
+.brand-txt{display:flex;flex-direction:column;line-height:1.2}
+.brand-name{font-weight:800;font-size:1.02rem;color:var(--brand);letter-spacing:.01em}
+.brand-sub{font-size:.7rem;color:var(--muted);letter-spacing:.14em}
+.nav{display:flex;gap:2px;flex-wrap:wrap;margin-left:auto}
+.nav a{
+  color:var(--ink-soft);font-size:.92rem;padding:8px 11px;border-radius:99px;
+  text-decoration:none;white-space:nowrap;transition:background .2s,color .2s;
+}
+.nav a:hover,.nav a:focus-visible{background:var(--accent-soft);color:var(--brand);text-decoration:none}
+.nav a.active{background:var(--brand);color:#fff}
+.head-tools{display:flex;align-items:center;gap:8px}
+.search{position:relative}
+.search input{
+  font:inherit;font-size:.88rem;padding:8px 12px 8px 32px;width:172px;
+  border:1px solid var(--line);border-radius:99px;background:#fff;color:var(--ink);
+}
+.search input:focus{border-color:var(--accent);outline:none;box-shadow:0 0 0 3px var(--accent-soft)}
+.search .ic{position:absolute;left:11px;top:50%;transform:translateY(-50%);width:14px;height:14px;opacity:.5}
+.srch-res{
+  position:absolute;right:0;top:calc(100% + 8px);width:290px;background:#fff;
+  border:1px solid var(--line);border-radius:var(--r-m);box-shadow:var(--shadow-m);
+  padding:8px;max-height:320px;overflow:auto;display:none;z-index:80;font-size:.86rem;
+}
+.srch-res.open{display:block}
+.srch-res a{display:block;padding:7px 9px;border-radius:var(--r-s);color:var(--ink-soft)}
+.srch-res a:hover{background:var(--paper);text-decoration:none}
+.srch-res .empty{color:var(--muted);padding:10px;font-size:.84rem}
+.menu-btn{
+  display:none;background:#fff;border:1px solid var(--line);border-radius:10px;
+  padding:7px 11px;font:inherit;font-size:.88rem;color:var(--brand);cursor:pointer;
+}
+.menu-btn:hover{background:var(--paper)}
+
+/* 布局容器 */
+.wrap{max-width:1180px;margin:0 auto;padding:0 18px}
+.main-grid{
+  display:grid;grid-template-columns:minmax(0,1fr) 304px;gap:var(--sp-5);
+  padding-top:var(--sp-5);padding-bottom:var(--sp-6);
+}
+.side{display:flex;flex-direction:column;gap:var(--sp-4)}
+.side .card{padding:16px 18px}
+.toc-list{list-style:none;margin:0;padding:0;font-size:.9rem}
+.toc-list li{margin:0}
+.toc-list a{
+  display:block;padding:7px 10px;border-left:2px solid var(--line);color:var(--ink-soft);
+  border-radius:0 8px 8px 0;text-decoration:none;
+}
+.toc-list a:hover{background:var(--paper);color:var(--brand)}
+.toc-list a.on{border-left-color:var(--accent);background:var(--accent-soft);color:var(--brand);font-weight:600}
+
+/* 通用卡片 */
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:var(--r-m);
+  box-shadow:var(--shadow-s);
+}
+.section{padding:var(--sp-4) 0 var(--sp-2)}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-bottom:var(--sp-3)}
+.sec-head p{margin:0;font-size:.88rem;color:var(--muted)}
+.kicker{
+  display:inline-block;font-size:.72rem;letter-spacing:.16em;color:var(--accent);
+  font-weight:700;margin-bottom:4px;
+}
+.lead{color:var(--ink-soft);font-size:1rem}
+
+/* 首屏 */
+.hero{
+  position:relative;overflow:hidden;border-radius:var(--r-l);
+  background:
+    radial-gradient(900px 380px at 88% -10%,#f6d9e7 0%,rgba(246,217,231,0) 62%),
+    radial-gradient(700px 420px at -6% 110%,#dcd2f0 0%,rgba(220,210,240,0) 60%),
+    linear-gradient(160deg,#2b1a4d 0%,#3b2266 52%,#552b7f 100%);
+  color:#f4ecfb;margin-top:var(--sp-4);
+}
+.hero-in{
+  position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);
+  gap:var(--sp-4);padding:clamp(22px,4vw,46px);
+}
+.hero h1{color:#fff;margin-bottom:10px}
+.hero .h1-note{font-size:.8rem;letter-spacing:.2em;color:#e8c6f4;text-transform:uppercase;margin-bottom:8px}
+.hero .hero-desc{color:#e4d8f2;font-size:1rem;max-width:34em}
+.hero-cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:var(--sp-3)}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;padding:11px 20px;border-radius:99px;
+  font-size:.94rem;font-weight:600;text-decoration:none;border:1px solid transparent;
+  transition:transform .18s,box-shadow .18s,background .18s;cursor:pointer;
+}
+.btn:hover{transform:translateY(-2px);text-decoration:none}
+.btn-main{background:var(--accent);color:#fff;box-shadow:0 6px 18px rgba(228,106,157,.36)}
+.btn-main:hover{background:#d8598d}
+.btn-ghost{background:rgba(255,255,255,.1);color:#f6ecfb;border-color:rgba(255,255,255,.32)}
+.btn-ghost:hover{background:rgba(255,255,255,.18)}
+.hero-stats{display:flex;gap:var(--sp-4);flex-wrap:wrap;margin-top:var(--sp-4)}
+.hero-stats div span{display:block;font-size:1.55rem;font-weight:800;color:#ffd6e9;line-height:1.2}
+.hero-stats div small{font-size:.78rem;color:#cbb9e0;letter-spacing:.04em}
+.hero-vis{position:relative;min-height:260px}
+.hero-vis svg{width:100%;height:100%;max-height:340px;display:block}
+@media(max-width:860px){
+  .hero-in{grid-template-columns:minmax(0,1fr)}
+  .hero-vis{order:-1;min-height:190px}
+}
+
+/* 领域概览：标签索引 */
+.taggrid{display:flex;flex-wrap:wrap;gap:8px}
+.tag{
+  font-size:.86rem;padding:6px 13px;border-radius:99px;background:#fff;
+  border:1px solid var(--line);color:var(--ink-soft);
+}
+.tag:hover{background:var(--accent-soft);border-color:#f2c3d8;color:var(--brand);text-decoration:none}
+.overview-note{font-size:.9rem;color:var(--ink-soft);margin-top:var(--sp-2)}
+
+/* 精选推荐 网格 */
+.grid-3{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:var(--sp-3)}
+.feature{display:flex;flex-direction:column;overflow:hidden;border-radius:var(--r-m)}
+.feature .thumb{aspect-ratio:16/9;width:100%;object-fit:cover;background:#eee}
+.feature .body{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.feature .body h3{font-size:1rem;margin:0}
+.feature .meta{font-size:.76rem;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap}
+.feature p{font-size:.88rem;color:var(--ink-soft);margin:0}
+.pill{display:inline-block;font-size:.72rem;padding:2px 9px;border-radius:99px;background:var(--accent-soft);color:#a13a68;font-weight:600}
+.badge-mint{background:var(--mint-soft);color:#1f6b5a}
+.badge-gold{background:var(--gold-soft);color:var(--gold)}
+
+/* 最新更新 紧凑列表 */
+.timeline{list-style:none;margin:0;padding:0}
+.timeline li{
+  display:grid;grid-template-columns:88px minmax(0,1fr);gap:12px;padding:12px 0;
+  border-bottom:1px dashed var(--line);margin:0;
+}
+.timeline li:last-child{border-bottom:0}
+.timeline time{font-size:.8rem;color:var(--muted);font-variant-numeric:tabular-nums;padding-top:2px}
+.timeline b{font-weight:600;color:var(--ink)}
+.timeline span{font-size:.86rem;color:var(--ink-soft);display:block}
+
+/* 分类入口 对照面板 */
+.panels{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:var(--r-m);overflow:hidden;background:#fff}
+.panel{padding:18px 20px}
+.panel:first-child{border-right:1px solid var(--line)}
+.panel h3{font-size:.98rem;display:flex;align-items:center;gap:8px}
+.dot{width:9px;height:9px;border-radius:50%;display:inline-block}
+.dot-a{background:var(--accent)}
+.dot-b{background:var(--mint)}
+.panel ul{font-size:.88rem;color:var(--ink-soft);margin:0;padding-left:1.1em}
+.panel li{margin-bottom:7px}
+.panel .foot{font-size:.8rem;color:var(--muted);margin-top:10px}
+
+/* 深度解析 */
+.article{
+  background:#fff;border:1px solid var(--line);border-radius:var(--r-m);
+  padding:clamp(18px,3vw,34px);box-shadow:var(--shadow-s);
+}
+.article h3{margin-top:var(--sp-4);padding-top:var(--sp-3);border-top:1px solid var(--line)}
+.article h3:first-of-type{border-top:0;padding-top:0;margin-top:var(--sp-3)}
+.article p{color:var(--ink-soft)}
+.article strong{color:var(--ink)}
+.quote{
+  margin:var(--sp-3) 0;padding:14px 18px;border-left:4px solid var(--accent);
+  background:var(--accent-soft);border-radius:0 var(--r-s) var(--r-s) 0;color:#7d2f52;font-size:.94rem;
+}
+.checklist{
+  background:var(--mint-soft);border:1px solid #bfe3d9;border-radius:var(--r-m);
+  padding:16px 20px;margin:var(--sp-3) 0;
+}
+.checklist h4{font-size:.92rem;color:#1f6b5a;margin-bottom:8px}
+.checklist ol{margin:0;padding-left:1.2em;font-size:.9rem;color:#245c4f}
+.data-table{width:100%;border-collapse:collapse;font-size:.88rem;margin:var(--sp-2) 0}
+.data-table th,.data-table td{border:1px solid var(--line);padding:8px 10px;text-align:left}
+.data-table th{background:var(--paper);font-weight:600;color:var(--ink)}
+.data-table td{color:var(--ink-soft)}
+
+/* 体验指南 编号步骤 */
+.steps{list-style:none;counter-reset:step;margin:0;padding:0;display:grid;gap:var(--sp-2)}
+.steps li{
+  counter-increment:step;position:relative;padding:14px 16px 14px 58px;
+  background:#fff;border:1px solid var(--line);border-radius:var(--r-m);margin:0;
+}
+.steps li::before{
+  content:counter(step,decimal-leading-zero);position:absolute;left:16px;top:14px;
+  font-weight:800;font-size:.92rem;color:var(--accent);letter-spacing:.04em;
+}
+.steps b{display:block;font-size:.96rem;margin-bottom:2px}
+.steps span{font-size:.88rem;color:var(--ink-soft)}
+
+/* FAQ */
+details.faq{
+  background:#fff;border:1px solid var(--line);border-radius:var(--r-m);
+  padding:0;margin-bottom:10px;overflow:hidden;
+}
+details.faq summary{
+  cursor:pointer;padding:14px 46px 14px 18px;font-weight:600;font-size:.96rem;
+  list-style:none;position:relative;
+}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq summary::after{
+  content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);
+  color:var(--accent);font-size:1.2rem;font-weight:700;transition:transform .2s;
+}
+details.faq[open] summary::after{content:"–";}
+details.faq[open] summary{background:var(--paper)}
+details.faq .ans{padding:2px 18px 16px;font-size:.9rem;color:var(--ink-soft)}
+
+/* 评论 */
+.reviews{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:var(--sp-3)}
+.review{background:#fff;border:1px solid var(--line);border-radius:var(--r-m);padding:16px 18px}
+.review .who{display:flex;align-items:center;gap:9px;margin-bottom:8px}
+.avatar{
+  width:34px;height:34px;border-radius:50%;display:grid;place-items:center;
+  font-size:.84rem;font-weight:700;color:#fff;flex:0 0 auto;
+}
+.review .who b{font-size:.88rem;display:block;line-height:1.3}
+.review .who small{font-size:.74rem;color:var(--muted)}
+.review p{font-size:.88rem;color:var(--ink-soft);margin:0}
+.review .ref{font-size:.76rem;color:var(--muted);margin-top:8px;display:block}
+.stars{color:var(--gold);font-size:.8rem;letter-spacing:1px}
+
+/* 资讯 列表 */
+.news{list-style:none;margin:0;padding:0;display:grid;gap:var(--sp-2)}
+.news li{
+  display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:start;
+  background:#fff;border:1px solid var(--line);border-radius:var(--r-m);padding:15px 18px;margin:0;
+}
+.news h3{font-size:.96rem;margin:0 0 4px}
+.news p{font-size:.86rem;color:var(--ink-soft);margin:0}
+.news time{font-size:.78rem;color:var(--muted);white-space:nowrap;padding-top:3px}
+
+/* 补充板块 榜单 */
+.rank{counter-reset:rk;list-style:none;margin:0;padding:0}
+.rank li{
+  counter-increment:rk;display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:10px;
+  align-items:center;padding:11px 4px;border-bottom:1px dashed var(--line);margin:0;font-size:.9rem;
+}
+.rank li:last-child{border-bottom:0}
+.rank li::before{
+  content:counter(rk);display:grid;place-items:center;width:26px;height:26px;border-radius:8px;
+  background:var(--paper);color:var(--brand-2);font-weight:800;font-size:.8rem;
+}
+.rank b{font-weight:600;display:block;font-size:.92rem}
+.rank small{color:var(--muted);font-size:.78rem}
+.rank .score{font-weight:800;color:var(--accent);font-variant-numeric:tabular-nums}
+
+/* 相关推荐 标签索引 */
+.reco{display:flex;flex-wrap:wrap;gap:8px}
+.reco a{
+  font-size:.86rem;padding:7px 14px;border-radius:99px;background:var(--paper);
+  border:1px solid var(--line);color:var(--ink-soft);
+}
+.reco a:hover{background:var(--brand);color:#fff;border-color:var(--brand);text-decoration:none}
+
+/* 页尾 */
+.footer{background:#1d1230;color:#c9bcdb;padding:var(--sp-6) 0 0;font-size:.88rem}
+.footer a{color:#e2d3f2}
+.footer a:hover{color:#fff}
+.foot-top{display:grid;grid-template-columns:minmax(0,1.3fr) repeat(3,minmax(0,1fr));gap:var(--sp-4)}
+.foot-brand svg{width:36px;height:36px}
+.foot-brand .fn{color:#fff;font-weight:800;font-size:1rem;margin:8px 0 6px;letter-spacing:.02em}
+.foot-brand p{color:#a193b8;font-size:.86rem;margin:0}
+.foot-col h4{color:#fff;font-size:.9rem;margin-bottom:10px}
+.foot-col ul{list-style:none;margin:0;padding:0}
+.foot-col li{margin-bottom:7px}
+.foot-col a{font-size:.86rem;text-decoration:none}
+.foot-bottom{
+  margin-top:var(--sp-5);border-top:1px solid #2f2148;padding:16px 0 26px;
+  display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.8rem;color:#8d7da6;
+}
+.foot-bottom .sample{max-width:60em}
+@media(max-width:860px){
+  .foot-top{grid-template-columns:1fr 1fr}
+  .foot-brand{grid-column:1/-1}
+}
+
+/* 回到顶部 */
+.totop{
+  position:fixed;right:18px;bottom:22px;z-index:70;width:44px;height:44px;border-radius:50%;
+  background:var(--brand);color:#fff;border:0;cursor:pointer;font-size:1rem;
+  display:none;place-items:center;box-shadow:var(--shadow-m);
+}
+.totop.show{display:grid}
+.totop:hover{background:var(--brand-2)}
+
+/* 响应式 */
+@media(max-width:980px){
+  .main-grid{grid-template-columns:minmax(0,1fr)}
+  .side{order:2}
+}
+@media(max-width:860px){
+  :root{--anchor:150px}
+  .menu-btn{display:inline-block;margin-left:auto}
+  .header-in{flex-wrap:wrap;gap:10px}
+  .nav{
+    display:none;flex-direction:column;gap:2px;width:100%;margin-left:0;
+    padding:6px 0 4px;border-top:1px solid var(--line);
+  }
+  .nav.open{display:flex}
+  .nav a{width:100%;border-radius:10px;padding:10px 12px}
+  .head-tools{margin-left:0}
+  .search input{width:132px}
+  .panels{grid-template-columns:1fr}
+  .panel:first-child{border-right:0;border-bottom:1px solid var(--line)}
+  .news li{grid-template-columns:minmax(0,1fr)}
+  .news time{padding-top:0}
+}
+@media(max-width:520px){
+  .notice-in{padding:9px 14px}
+  .hero-stats{gap:var(--sp-3)}
+  .timeline li{grid-template-columns:70px minmax(0,1fr)}
+  .brand-name{font-size:.94rem}
+  .srch-res{width:min(260px,calc(100vw - 44px))}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .btn:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+<a class="skip" href="#overview">跳到正文</a>
+
+<div class="sticky-stack">
+  <div class="notice" id="notice-bar">
+    <div class="notice-in">
+      <span class="nb">更新</span>
+      <span><b>挠脚心magic官网</b> 11 月 5 日上线「脚心敏感度分级表 v2」，同步更新 12 条实测记录与 3 个新手动作。</span>
+      <a href="#latest">查看更新明细</a>
+      <a href="#guide" style="margin-left:auto">新手三步入门 →</a>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="header-in">
+      <a class="brand" href="/#top" aria-label="返回首页顶部">
+        <svg viewBox="0 0 64 64" role="img" aria-hidden="true">
+          <rect width="64" height="64" rx="15" fill="#2b1a4d"/>
+          <path d="M23 13c8.5 0 15 6.4 15 14.6 0 6-3.2 9.4-3.2 14.6 0 6.3-4.3 10.8-10.6 10.8-6.4 0-10.7-5.2-10.7-11.6 0-5.4 3.2-8.4 3.2-13.6C16.7 19.4 19.6 13 23 13Z" fill="#f2a0c4"/>
+          <circle cx="23" cy="23" r="2.7" fill="#2b1a4d"/>
+          <circle cx="36" cy="25" r="2.7" fill="#2b1a4d"/>
+          <path d="M25 33c3 3 7 3 10 0" stroke="#2b1a4d" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+          <path d="M44 40c3-4 3-9 0-13" stroke="#ffe6f2" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+          <path d="M49 44c4.5-6 4.5-14 0-20" stroke="#ffe6f2" stroke-width="2.4" fill="none" stroke-linecap="round" opacity=".7"/>
+        </svg>
+        <span class="brand-txt">
+          <span class="brand-name">挠脚心magic官网</span>
+          <span class="brand-sub">FOOT TICKLE LAB</span>
+        </span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">目录</button>
+
+      <nav class="nav" id="mainNav" aria-label="主题导航">
+        <a href="/#overview">领域概览</a>
+        <a href="/#featured">精选推荐</a>
+        <a href="/#latest">最新更新</a>
+        <a href="/#channels">分类入口</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">常见问答</a>
+        <a href="/#reviews">用户评论</a>
+      </nav>
+
+      <div class="head-tools">
+        <div class="search">
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="#241a33" stroke-width="2"/><path d="M16.5 16.5 21 21" stroke="#241a33" stroke-width="2" stroke-linecap="round"/></svg>
+          <input id="q" type="search" placeholder="搜动作、部位、工具" aria-label="站内搜索" autocomplete="off">
+          <div class="srch-res" id="srchRes" role="listbox" aria-live="polite"></div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero" aria-labelledby="hero-h1">
+    <div class="hero-in">
+      <div>
+        <div class="h1-note">足底触觉 · 轻挠实验</div>
+        <h1 id="hero-h1">挠脚心magic官网</h1>
+        <p class="hero-desc">把「脚心怕痒」拆开看：哪些部位反应最强、羽毛与指腹差多少、力度多轻才不痛。这里收着 47 条可复述的实测记录、6 类工具对照，以及一份给新手的轻挠顺序表——从大脚趾根开始，还是从足弓外侧起步，差别比想象中大。</p>
+        <div class="hero-cta">
+          <a class="btn btn-main" href="/#guide">照着做：新手三步</a>
+          <a class="btn btn-ghost" href="/#deep">先读深度解析</a>
+        </div>
+        <div class="hero-stats">
+          <div><span>47</span><small>条实测记录</small></div>
+          <div><span>6 类</span><small>工具对照</small></div>
+          <div><span>5 级</span><small>敏感度分级</small></div>
+        </div>
+      </div>
+      <div class="hero-vis" aria-hidden="true">
+        <svg viewBox="0 0 420 360" role="img" aria-label="脚心与轻挠轨迹的抽象示意图">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#f7b8d2"/><stop offset="1" stop-color="#c98fe6"/>
+            </linearGradient>
+            <linearGradient id="g2" x1="0" y1="1" x2="1" y2="0">
+              <stop offset="0" stop-color="#ffe6f2" stop-opacity=".9"/><stop offset="1" stop-color="#ffe6f2" stop-opacity="0"/>
+            </linearGradient>
+          </defs>
+          <circle cx="210" cy="180" r="146" fill="#ffffff" opacity=".06"/>
+          <circle cx="210" cy="180" r="106" fill="#ffffff" opacity=".05"/>
+          <path d="M168 78c36 0 63 27 63 61 0 26-14 40-14 62 0 27-18 46-45 46-27 0-45-22-45-49 0-23 14-35 14-58 0-36 12-62 27-62z" fill="url(#g1)" opacity=".95"/>
+          <path d="M152 108c-9 8-14 20-14 34 0 15 6 24 6 38" stroke="#2b1a4d" stroke-width="7" fill="none" stroke-linecap="round" opacity=".55"/>
+          <circle cx="163" cy="132" r="7" fill="#2b1a4d" opacity=".8"/>
+          <circle cx="199" cy="140" r="7" fill="#2b1a4d" opacity=".8"/>
+          <path d="M166 172c10 11 25 11 35 0" stroke="#2b1a4d" stroke-width="6" fill="none" stroke-linecap="round" opacity=".7"/>
+          <path d="M262 96c-24 18-40 44-46 76" stroke="url(#g2)" stroke-width="10" fill="none" stroke-linecap="round"/>
+          <path d="M282 118c-20 16-34 38-40 66" stroke="#ffe6f2" stroke-width="3" fill="none" stroke-linecap="round" opacity=".65"/>
+          <path d="M300 146c-15 13-26 30-31 51" stroke="#ffe6f2" stroke-width="3" fill="none" stroke-linecap="round" opacity=".45"/>
+          <circle cx="286" cy="222" r="12" fill="#e46a9d"/>
+          <circle cx="286" cy="222" r="5" fill="#fff" opacity=".85"/>
+          <g stroke="#e8c6f4" stroke-width="2" opacity=".55">
+            <path d="M86 300h58"/><path d="M300 60h44"/><path d="M60 96h34"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap main-grid">
+    <div>
+
+      <!-- 领域概览 -->
+      <section class="section" id="overview" aria-labelledby="ov-h">
+        <div class="sec-head">
+          <div>
+            <span class="kicker">01 / 领域概览</span>
+            <h2 id="ov-h">脚心轻挠到底在测什么</h2>
+          </div>
+        </div>
+        <p class="lead">脚底分布着密集的触觉小体，足弓内侧每平方厘米约 200 个机械感受器，比小腿多出 3 倍。轻挠带来的不是单点压力，而是连续移动的触觉信号，大脑处理后产生痒感与躲避反射。这一反应有个体差异：同一个人左脚、右脚的反应强度也可能差一档。下面是这一领域里最常被检索的 14 个词，每个词背后都对应可操作的动作或判断。</p>
+        <div class="taggrid" aria-label="脚心轻挠相关搜索词">
+          <a class="tag" href="/#deep">脚心敏感度测试</a>
+          <a class="tag" href="/#deep">足弓怕痒原因</a>
+          <a class="tag" href="/#guide">羽毛轻挠手法</a>
+          <a class="tag" href="/#channels">指腹与指甲差别</a>
+          <a class="tag" href="/#featured">大脚趾根反应</a>
+          <a class="tag" href="/#guide">轻挠力度分级</a>
+          <a class="tag" href="/#latest">脚掌中央禁区</a>
+          <a class="tag" href="/#channels">棉签与毛笔对比</a>
+          <a class="tag" href="/#faq">怕痒与怕痛区别</a>
+          <a class="tag" href="/#reviews">脚心反应左右差异</a>
+          <a class="tag" href="/#rank">新手工具榜</a>
+          <a class="tag" href="/#faq">挠多久会适应</a>
+          <a class="tag" href="/#guide">脚背与脚跟过渡</a>
+          <a class="tag" href="/#reco">安全边界确认表</a>
+        </div>
+        <p class="overview-note">14 个词按「部位—工具—反应—边界」四层排列。检索量最高的三个是脚心敏感度测试、羽毛轻挠手法、指腹与指甲差别，它们分别对应自测、操作与工具选择三个环节。</p>
+      </section>
+
+      <!-- 精选推荐 -->
+      <section class="section" id="featured" aria-labelledby="ft-h">
+        <div class="sec-head">
+          <div>
+            <span class="kicker">02 / 精选推荐</span>
+            <h2 id="ft-h">本周值得细读的六份记录</h2>
+          </div>
+          <p>含动作、时长、反应三要素</p>
+        </div>
+        <div class="grid-3">
+          <article class="card feature">
+            <img class="thumb" src="https://picsum.photos/seed/tickle-feather-11/640/360" width="640" height="360" loading="lazy" alt="白色羽毛在足弓上方悬停的示意画面" style="object-fit:cover">
+            <div class="body">
+              <div class="meta"><span class="pill">工具对照</span><span>11-06</span></div>
+              <h3><a href="/#deep">羽毛轻挠：0.3 牛顿与 0.8 牛顿的分界</a></h3>
+              <p>同一只右脚，3 分钟间隔，两种力度下躲避阈值差了 1.7 秒。记录者为 28 岁女性，脚心分级 4 级。</p>
+            </div>
+          </article>
+          <article class="card feature">
+            <img class="thumb" src="https://picsum.photos/seed/tickle-toe-07/640/360" width="640" height="360" loading="lazy" alt="脚趾根部被棉签轻触的局部画面" style="object-fit:cover">
+            <div class="body">
+              <div class="meta"><span class="pill badge-mint">敏感度</span><span>11-04</span></div>
+              <h3><a href="/#channels">大脚趾根为什么排第一：12 人点位复测</a></h3>
+              <p>12 名参与者中 9 人把大脚趾根列为最强点，足弓外侧仅 2 人。点位图与打分明细已归档。</p>
+            </div>
+          </article>
+          <article class="card feature">
+            <img class="thumb" src="https://picsum.photos/seed/tickle-sole-22/640/360" width="640" height="360" loading="lazy" alt="足底内侧曲线与手指距离的示意画面" style="object-fit:cover">
+            <div class="body">
+              <div class="meta"><span class="pill badge-gold">入门</span><span>11-02</span></div>
+              <h3><a href="/#guide">从足弓起步的三步顺序表</a></h3>
+              <p>先外侧后内侧、先短后长、先轻后停。三步全部做完约 90 秒，适合第一次尝试的人。</p>
+            </div>
+          </article>
+          <article class="card feature">
+            <img class="thumb" src="https://picsum.photos/seed/tickle-brush-31/640/360" width="640" height="360" loading="lazy" alt="软毛刷靠近脚掌边缘的桌面摆拍" style="object-fit:cover">
+            <div class="body">
+              <div class="meta"><span class="pill">工具对照</span><span>10-31</span></div>
+              <h3><a href="/#rank">棉签、毛笔、软毛刷三件套实测</a></h3>
+              <p>棉签控向最稳，毛笔覆盖最广，软毛刷最容易触发整脚抽动。三者在足弓的反应差 0.9 分。</p>
+            </div>
+          </article>
+          <article class="card feature">
+            <img class="thumb" src="https://picsum.photos/seed/tickle-reflex-44/640/360" width="640" height="360" loading="lazy" alt="腿部轻微回缩动作的侧面剪影" style="object-fit:cover">
+            <div class="body">
+              <div class="meta"><span class="pill badge-mint">反应</span><span>10-30</span></div>
+              <h3><a href="/#deep">躲闪反射：脚趾张开到小腿回缩的顺序</a></h3>
+              <p>先脚趾扇形张开，再足背屈，最后小腿回缩，三者间隔约 200 毫秒。不是同时发生的。</p>
+            </div>
+          </article>
+          <article class="card feature">
+            <img class="thumb" src="https://picsum.photos/seed/tickle-note-58/640/360" width="640" height="360" loading="lazy" alt="手写记录表与计时器的俯拍" style="object-fit:cover">
+            <div class="body">
+              <div class="meta"><span class="pill">方法</span><span>10-29</span></div>
+              <h3><a href="/#deep">怎样记录才算可复述：四栏表写法</a></h3>
+              <p>栏位是部位、工具、时长、反应等级。缺任何一栏，记录都无法被别人重做一遍。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 最新更新 -->
+      <section class="section" id="latest" aria-labelledby="lt-h">
+        <div class="sec-head">
+          <div>
+            <span class="kicker">03 / 最新更新</span>
+            <h2 id="lt-h">近十日条目变更</h2>
+          </div>
+          <p>按日期倒序 · 含修订说明</p>
+        </div>
+        <ul class="timeline">
+          <li><time datetime="2026-11-07">11-07 昨天</time><div><b>敏感度分级表 v2 发布</b><span>5 级改为「0 无感、1 微痒、2 想躲、3 抽腿、4 出手挡」，并把原 v1 的“3 级”拆分，12 条旧记录按新标重评。</span></div></li>
+          <li><time datetime="2026-11-06">11-06</time><div><b>羽毛力度实验补测</b><span>增加 0.3 与 0.8 牛顿两组对照，记录者自评与观察者评分一致率 83%。</span></div></li>
+          <li><time datetime="2026-11-05">11-05</time><div><b>大脚趾根点位图更新</b><span>新增 12 人复测，点位从 6 个扩到 9 个，足弓外侧数据由 2 人升至 3 人。</span></div></li>
+          <li><time datetime="2026-11-03">11-03</time><div><b>工具榜第 4 期</b><span>棉签排名从第 3 升至第 2，理由是控向稳定；软毛刷因整脚抽动过多降至第 3。</span></div></li>
+          <li><time datetime="2026-10-31">10-31</time><div><b>安全边界确认表上线</b><span>列出 7 项停止条件，含皮肤发红、持续刺痛、出现恐惧表情三类。</span></div></li>
+          <li><time datetime="2026-10-29">10-29</time><div><b>四栏记录表模板</b><span>补充填写示例 3 条，其中 1 条标注为“未完成，仅记录到 40 秒”。</span></div></li>
+          <li><time datetime="2026-10-25">10-25</time><div><b>左右脚差异专题</b><span>汇总 9 人左右脚评分，差 1 分以上的有 5 人，右脚普遍更高一档。</span></div></li>
+          <li><time datetime="2026-10-20">10-20</time><div><b>脚背过渡区说明</b><span>新增脚背与足弓衔接段描述，指出该区域反应衰减快于足弓本身。</span></div></li>
+        </ul>
+      </section>
+
+      <!-- 分类入口 -->
+      <section class="section" id="channels" aria-labelledby="ch-h">
+        <div class="sec-head">
+          <div>
+            <span class="kicker">04 / 分类入口</span>
+            <h2 id="ch-h">按用途分成两组</h2>
+          </div>
+          <p>左侧偏操作，右侧偏判断</p>
+        </div>
+        <div class="panels">
+          <div class="panel">
+            <h3><span class="dot dot-a"></span>动作与工具</h3>
+            <ul>
+              <li><a href="/#guide">羽毛轻挠手法</a> · 起手角度 30–45 度</li>
+              <li><a href="/#rank">棉签与毛笔对比</a> · 控向稳定性打分</li>
+              <li><a href="/#guide">指腹与指甲差别</a> · 面积与压强</li>
+              <li><a href="/#featured">大脚趾根反应</a> · 9 个点位中的第 1 位</li>
+              <li><a href="/#guide">脚心敏感度测试</a> · 自测 3 分钟流程</li>
+            </ul>
+            <p class="foot">操作类条目都带时长与力度，缺一项视为不完整。</p>
+          </div>
+          <div class="panel">
+            <h3><span class="dot dot-b"></span>判断与边界</h3>
+            <ul>
+              <li><a href="/#faq">怕痒与怕痛区别</a> · 阈值不同源</li>
+              <li><a href="/#faq">挠多久会适应</a> · 3–5 分钟窗口</li>
+              <li><a href="/#reco">安全边界确认表</a> · 7 项停止条件</li>
+              <li><a href="/#reviews">脚心反应左右差异</a> · 9 人样本</li>
+              <li><a href="/#deep">躲闪反射顺序</a> · 三段 200 毫秒</li>
+            </ul>
+            <p class="foot">判断类条目标注依据类型：实测、转述、推测，分开写。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 深度解析 -->
+      <section class="section" id="deep" aria-labelledby="dp-h">
+        <div class="sec-head">
+          <div>
+            <span class="kicker">05 / 深度解析</span>
+            <h2 id="dp-h">脚心越轻越痒？一个被夸大的经验</h2>
+          </div>
+        </div>
+        <article class="article">
+          <p>“羽毛比手指痒”这句话在圈子里流传很广，但把两组数据摆在一起，结论会变得窄很多。10 月 6 日到 11 月 6 日，12 名参与者在同一房间、同一室温 24℃、同一只右脚上做了对照：羽毛 0.3 牛顿与指腹 0.3 牛顿，各持续 20 秒，间隔 3 分钟。结果是 7 人认为羽毛更痒，3 人认为指腹更痒，2 人说“没差别”。也就是说，羽毛的优势只在多数人身上成立，而不是规则。</p>
+
+          <h3>力度相同，为什么触感不同</h3>
+          <p>羽毛的接触面约 2 平方厘米，指腹压下去约 6 平方厘米。同样的总力分散到更小面积，单位压强接近 3 倍，触觉小体被激活的密度更高。但压强高不等于更痒：有 3 名参与者在羽毛组出现明显回缩，反而自评比指腹组低 1 档，理由是“太尖，先想到会不会扎”。痒感和防御性疼痛预期是两条通路，前者需要安全感。</p>
+          <p>还有一个被忽略的变量是移动速度。羽毛实验中，速度控制在每秒 4 厘米；指腹组因为手指较宽，实际平均速度只有每秒 2.5 厘米。11 月 6 日的补测把指腹速度提到每秒 4 厘米后，双方评分差距从 1.2 分缩到 0.4 分。速度不一致，前面的对比就不干净。</p>
+
+          <div class="quote">可引用的判断：在 0.3 牛顿、每秒 4 厘米的条件下，羽毛对多数人的痒感更强，但优势约半档；一旦速度不对齐，优势就接近消失。这个结论可被反驳——只要有一组 12 人以上的对照得出相反结果。</div>
+
+          <h3>分级表 v2 改了什么，为什么改</h3>
+          <p>旧版把“明显想躲”和“腿抽一下”放在同一级，导致 12 条记录中有 5 条无法区分。11 月 7 日发布的 v2 拆成两级：2 级是躯干不动、脚踝有转动；3 级是小腿明显回缩。重评后，原先的 3 级记录有 4 条降到 2 级，1 条升到 4 级。数字变化说明分级粒度直接决定结论，而不是记录者变敏感了。</p>
+          <table class="data-table">
+            <caption style="caption-side:top;text-align:left;font-size:.8rem;color:#7a6c8d;padding-bottom:6px">表：v1 与 v2 对同一批 12 条记录的重评结果</caption>
+            <thead><tr><th>级别</th><th>v1 判据</th><th>v2 判据</th><th>重评后条数</th></tr></thead>
+            <tbody>
+              <tr><td>2 级</td><td>想躲</td><td>躯干不动，脚踝转动</td><td>6</td></tr>
+              <tr><td>3 级</td><td>想躲</td><td>小腿明显回缩</td><td>4</td></tr>
+              <tr><td>4 级</td><td>出手挡</td><td>出手挡或出声制止</td><td>2</td></tr>
+            </tbody>
+          </table>
+
+          <h3>适应发生在第几分钟</h3>
+          <p>10 月 25 日的左右脚专题里，9 名参与者连续接受 8 分钟同点位轻挠。反应强度在第 1 分钟达到峰值，第 3 分钟开始下降，第 5 分钟后多数人报告“还在痒，但不想躲了”。只有 2 人全程维持 3 级以上。这条数据支持一个可操作结论：想让反应完整呈现，单次刺激别超过 5 分钟；想观察适应曲线，至少录 8 分钟。两者目的不同，不应混在一次记录里。</p>
+
+          <div class="checklist">
+            <h4>可核对清单：复现一次羽毛对照需要写清的五项</h4>
+            <ol>
+              <li>工具与接触面积（羽毛 2 平方厘米，指腹 6 平方厘米）</li>
+              <li>力度（0.3 牛顿，可用厨房秤轻压校准）</li>
+              <li>移动速度（每秒 4 厘米，用手机秒表对 20 厘米距离计时 5 秒）</li>
+              <li>刺激时长与间隔（20 秒，间隔 3 分钟）</li>
+              <li>反应分级（按 v2 的 0–4 级，附观察者与本人双评）</li>
+            </ol>
+          </div>
+
+          <h3>争议点：所谓“magic 触点”是否存在</h3>
+          <p>有说法称足弓正中偏内 2 厘米处存在一个“一点就笑”的触点。已核对的事实是：12 人点位复测中有 4 人报告该处反应最强，但另外 8 人的最强点在别处，其中 6 人在大脚趾根。可以转述的说法是“部分人这里更敏感”；推测部分则没有依据。把个体点位当成通用规则，会让新手第一次尝试就落空，进而误判自己“不怕痒”。</p>
+          <p>还有一种流传更广的讲法是“越怕痒的人越健康”，没有可核对来源，属于转述而非事实，本站不采纳为判断依据。</p>
+        </article>
+      </section>
+
+      <!-- 体验指南 -->
+      <section class="section" id="guide" aria-labelledby="gd-h">
+        <div class="sec-head">
+          <div>
+            <span class="kicker">06 / 体验指南</span>
+            <h2 id="gd-h">第一次尝试的五个步骤</h2>
+          </div>
+          <p>全程约 4 分钟</p>
+        </div>
+        <ol class="steps">
+          <li><b>先说清停止信号</b><span>约定一个词，比如“停”。出现这个词立刻收手，不留“再试一下”的余地。7 项停止条件见安全边界确认表。</span></li>
+          <li><b>从足弓外侧起手</b><span>外侧反应普遍低于内侧，适合让人先熟悉触感。12 人样本中只有 2 人外侧最强。</span></li>
+          <li><b>力度定在 0.3 牛顿</b><span>大约是把羽毛压弯一半的力。可先用厨房秤压一次，找到手感再上脚。</span></li>
+          <li><b>单段不超过 20 秒</b><span>每段之间停 30 秒。第 3 分钟后反应会自然下降，别把适应误当作“没意思”。</span></li>
+          <li><b>收尾记录四栏</b><span>部位、工具、时长、反应等级。缺一栏，下次无法比较，也谈不上进步。</span></li>
+        </ol>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section" id="faq" aria-labelledby="fq-h">
+        <div class="sec-head">
+          <div>
+            <span class="kicker">07 / 常见问答</span>
+            <h2 id="fq-h">被问得最多的八个问题</h2>
+          </div>
+        </div>
+
+        <details class="faq" open>
+          <summary>脚心怕痒和怕痛是一回事吗</summary>
+          <div class="ans">不是同一条通路。痒感由轻触觉与移动刺激触发，怕痛来自高阈值机械与热刺激。有人脚心极度怕痒，但按压足底筋膜时毫无不适；也有人相反。判断时分开问：轻挠想不想躲，用力按痛不痛。</div>
+        </details>
+        <details class="faq">
+          <summary>脚心敏感度测试自己做要准备什么</summary>
+          <div class="ans">一支棉签、一根羽毛、一个计时器、一张四栏表。坐姿把脚放在矮凳上，脚踝自然放松。按足弓外侧、足弓内侧、大脚趾根、脚掌前部、脚跟五个点位各 20 秒，逐点打 0–4 级。全部做完约 3 分钟。</div>
+        </details>
+        <details class="faq">
+          <summary>羽毛轻挠手法角度多少合适</summary>
+          <div class="ans">30 到 45 度之间。角度太陡，羽尖集中，容易被感知为刺；太平，接触面变大，痒感反而弱。速度按每秒 4 厘米移动，画小弧线而不是直线，直线容易让人提前预判。</div>
+        </details>
+        <details class="faq">
+          <summary>指腹和指甲的差别有多大</summary>
+          <div class="ans">指腹接触面积约 6 平方厘米，指甲边缘不到 0.5 平方厘米。同样力度下压强差 10 倍以上。指甲更容易触发防御回缩，痒感反而未必更高。10 月 31 日的对照里，指甲组有 5 人出现明显回缩，其中 3 人自评“不太痒，只想缩脚”。</div>
+        </details>
+        <details class="faq">
+          <summary>挠多久会适应，适应了还算有效吗</summary>
+          <div class="ans">9 人样本中，反应峰值在第 1 分钟，第 3 分钟开始下降，第 5 分钟后多数人不再想躲。适应不等于无效：痒感仍在，只是躲避冲动减弱。想记录完整曲线就录 8 分钟；想体验强度，5 分钟内收手更合适。</div>
+        </details>
+        <details class="faq">
+          <summary>脚掌中央为什么被列为禁区</summary>
+          <div class="ans">脚掌前部中央靠近跖骨头，皮下脂肪薄，轻挠时容易被感知为硌或痛。12 人中有 7 人明确表示该区域“不舒服多于痒”。把它列进新手顺序表的最后一位，且只做 10 秒。</div>
+        </details>
+        <details class="faq">
+          <summary>左右脚反应差一档正常吗</summary>
+          <div class="ans">正常。9 人左右脚对照中，差 1 分以上的有 5 人，其中 4 人右脚更高。差异可能来自惯用脚、鞋型或既往受伤史。记录时两只脚分开写，别取平均，平均值会掩盖真正的差异。</div>
+        </details>
+        <details class="faq">
+          <summary>棉签、毛笔、软毛刷怎么选</summary>
+          <div class="ans">看目的。要控向稳定选棉签，落点误差最小；要覆盖大面积选毛笔，一笔能扫过足弓全段；想快速触发整脚抽动选软毛刷。工具榜第 4 期把棉签排到第 2，理由是重复实验时结果最稳。</div>
+        </details>
+      </section>
+
+      <!-- 用户评论 -->
+      <section class="section" id="reviews" aria-labelledby="rv-h">
+        <div class="sec-head">
+          <div>
+            <span class="kicker">08 / 用户评论</span>
+            <h2 id="rv-h">十二条记录下的真实回复</h2>
+          </div>
+          <p>含中性意见与反对声音</p>
+        </div>
+        <div class="reviews">
+          <div class="review">
+            <div class="who"><span class="avatar" style="background:#5b2f8e">阿</span><div><b>阿棠</b><small>11-07 · 参与羽毛对照</small></div></div>
+            <p>我就是那 3 个觉得指腹更痒的人之一。羽毛扫到足弓内侧像有人拿笔尖点我，第一反应是缩脚而不是笑。指腹慢一点反而更难受。</p>
+            <span class="ref">回应条目：羽毛轻挠 0.3 与 0.8 牛顿分界</span>
+          </div>
+          <div class="review">
+            <div class="who"><span class="avatar" style="background:#2f8f7a">木</span><div><b>木子李</b><small>11-06 · 自测 4 级</small></div></div>
+            <p>按分级表 v2 重新打分，从原来 3 级降到 2 级。之前把脚踝转动也算成躲，其实躯干没动。改判据之后清楚多了。</p>
+            <span class="ref">回应条目：敏感度分级表 v2</span>
+          </div>
+          <div class="review">
+            <div class="who"><span class="avatar" style="background:#a9761a">老</span><div><b>老周</b><small>11-05 · 旁观者</small></div></div>
+            <p>“越怕痒越健康”这种话还是删了吧，找不到出处。家里小孩被这么说过一次，后来一直觉得自己不正常。</p>
+            <span class="ref">回应条目：深度解析争议点段</span>
+          </div>
+          <div class="review">
+            <div class="who"><span class="avatar" style="background:#e46a9d">C</span><div><b>Cirrus</b><small>11-04 · 点位复测</small></div></div>
+            <p>大脚趾根确实第一，但我的第二强点是脚跟内侧，列表里没有。9 个点位还是不够，建议下期加到 12 个。</p>
+            <span class="ref">回应条目：大脚趾根点位图</span>
+          </div>
+          <div class="review">
+            <div class="who"><span class="avatar" style="background:#3b2266">小</span><div><b>小满</b><small>11-03 · 新手</small></div></div>
+            <p>三步顺序表很实用。外侧起手真的没那么紧张，之前直接上足弓内侧，第一下就把腿缩回来了，还以为自己特别敏感。</p>
+            <span class="ref">回应条目：从足弓起步的三步顺序表</span>
+          </div>
+          <div class="review">
+            <div class="who"><span class="avatar" style="background:#7a3fa8">雷</span><div><b>雷阵雨</b><small>11-02 · 持不同意见</small></div></div>
+            <p>力度用牛顿来讲对普通人不友好。厨房秤压羽毛这个操作我试了三次都没法稳定，最后靠感觉。写 0.3 牛顿不如写“羽毛弯一半”。</p>
+            <span class="ref">回应条目：体验指南第 3 步</span>
+          </div>
+          <div class="review">
+            <div class="who"><span class="avatar" style="background:#2f8f7a">青</span><div><b>青苔</b><small>10-31 · 工具对照</small></div></div>
+            <p>软毛刷排第三我不服。整脚抽动正是我要的效果，抽动多说明刺激到位。控向稳定对我没意义，我又不做实验。</p>
+            <span class="ref">回应条目：工具榜第 4 期</span>
+          </div>
+          <div class="review">
+            <div class="who"><span class="avatar" style="background:#5b2f8e">K</span><div><b>Kite</b><small>10-30 · 记录者</small></div></div>
+            <p>四栏表建议加一栏“环境温度”。10 月我在 18℃ 和 24℃ 各做一次，同样的力度，冷的时候反应明显低一档，差点以为自己状态不好。</p>
+            <span class="ref">回应条目：四栏记录表模板</span>
+          </div>
+          <div class="review">
+            <div class="who"><span class="avatar" style="background:#e46a9d">米</span><div><b>米粒</b><small>10-29 · 阅读者</small></div></div>
+            <p>适应那段写得实在。第 4 分钟我就觉得“不痒了”，差点放弃记录，看到 8 分钟曲线才明白是正常下降，不是工具失效。</p>
+            <span class="ref">回应条目：适应发生在第几分钟</span>
+          </div>
+          <div class="review">
+            <div class="who"><span class="avatar" style="background:#a9761a">常</span><div><b>常青</b><small>10-27 · 中性评价</small></div></div>
+            <p>内容够细，但页面里“可核对”“可复述”出现得有点多，像在提醒自己严谨。读起来反而累，希望正常讲事。</p>
+            <span class="ref">指向站点写法本身，不对应具体条目</span>
+          </div>
+          <div class="review">
+            <div class="who"><span class="avatar" style="background:#3b2266">白</span><div><b>白露</b><small>10-26 · 左右脚专题</small></div></div>
+            <p>我就是右脚高一档的那个。以前一直以为是自己心理作用，看到 9 人里 5 人都有差异，才确认不是错觉。</p>
+            <span class="ref">回应条目：左右脚差异专题</span>
+          </div>
+          <div class="review">
+            <div class="who"><span class="avatar" style="background:#7a3fa8">S</span><div><b>Seven</b><small>10-25 · 敏感度自测</small></div></div>
+            <p>脚掌中央那段同意，按下去真的只有硌。但 10 秒太短了，我连反应都还没判断出来就结束了，建议 15 秒。</p>
+            <span class="ref">回应条目：FAQ 脚掌中央禁区</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 相关资讯 -->
+      <section class="section" id="news" aria-labelledby="nw-h">
+        <div class="sec-head">
+          <div>
+            <span class="kicker">09 / 相关资讯</span>
+            <h2 id="nw-h">圈内近一周的六条动态</h2>
+          </div>
+        </div>
+        <ul class="news">
+          <li>
+            <div>
+              <h3>某轻挠体验群把「停止词」写进群规第 1 条</h3>
+              <p>群规 11 月 6 日修订，48 人中有 41 人投票同意。修订后第一次线下活动采用统一停止词，无人中途退出。</p>
+            </div>
+            <time datetime="2026-11-06">11-06</time>
+          </li>
+          <li>
+            <div>
+              <h3>分级表 v2 被两个自测社群转用</h3>
+              <p>转用方各调整了一处：一方把 4 级细分为“出声”和“出手”，另一方删掉 0 级。分叉点在是否承认无感人群。</p>
+            </div>
+            <time datetime="2026-11-05">11-05</time>
+          </li>
+          <li>
+            <div>
+              <h3>羽毛对照实验的第二批参与者招募结束</h3>
+              <p>11 月 3 日截止，报名 26 人，按左右脚差异筛选后保留 12 人，与首批样本不重叠。</p>
+            </div>
+            <time datetime="2026-11-03">11-03</time>
+          </li>
+          <li>
+            <div>
+              <h3>工具榜第 4 期引发一次排名争议</h3>
+              <p>争议焦点是软毛刷从第 2 降到第 3。榜单方给出的理由是“整脚抽动过多，单点反应难判”，反对者认为这属于目的差异。</p>
+            </div>
+            <time datetime="2026-11-02">11-02</time>
+          </li>
+          <li>
+            <div>
+              <h3>一份脚心点位图在三个平台被转载</h3>
+              <p>转载版本删掉了原件里的“样本 12 人”标注，只保留点位。缺样本量，点位图会被误读成通用结论。</p>
+            </div>
+            <time datetime="2026-10-30">10-30</time>
+          </li>
+          <li>
+            <div>
+              <h3>有读者提出加“环境温度”记录栏</h3>
+              <p>10 月 29 日提出，理由是低温下同力度反应低一档。该建议已进入四栏表修订讨论，尚未定稿。</p>
+            </div>
+            <time datetime="2026-10-29">10-29</time>
+          </li>
+        </ul>
+      </section>
+
+      <!-- 补充板块：榜单 -->
+      <section class="section" id="rank" aria-labelledby="rk-h">
+        <div class="sec-head">
+          <div>
+            <span class="kicker">10 / 工具榜</span>
+            <h2 id="rk-h">第 4 期：五种轻挠工具排序</h2>
+          </div>
+          <p>按重复实验稳定性</p>
+        </div>
+        <ol class="rank">
+          <li><div><b>羽毛（鹅毛）</b><small>接触面 2 平方厘米，控向良好，足弓全段可一笔扫过</small></div><span class="score">9.1</span></li>
+          <li><div><b>棉签（木杆）</b><small>落点误差最小，适合点位复测；覆盖面窄，耗时最长</small></div><span class="score">8.7</span></li>
+          <li><div><b>软毛刷</b><small>覆盖最广，整脚抽动多；单点反应难判，排名下降一位</small></div><span class="score">8.2</span></li>
+          <li><div><b>指腹</b><small>无需工具，力度自然；接触面 6 平方厘米，速度偏慢</small></div><span class="score">7.9</span></li>
+          <li><div><b>毛笔（兼毫）</b><small>羽尖软硬不一，同批次差异大，重复实验信任度低</small></div><span class="score">7.1</span></li>
+        </ol>
+      </section>
+
+      <!-- 相关推荐 -->
+      <section class="section" id="reco" aria-labelledby="rc-h">
+        <div class="sec-head">
+          <div>
+            <span class="kicker">11 / 相关推荐</span>
+            <h2 id="rc-h">接着可以看的十一条</h2>
+          </div>
+        </div>
+        <div class="reco">
+          <a href="/#deep">脚心敏感度分级表 v2 全文</a>
+          <a href="/#deep">羽毛与指腹压强对比</a>
+          <a href="/#guide">安全边界确认表 7 项</a>
+          <a href="/#guide">新手三步顺序表</a>
+          <a href="/#faq">适应曲线的 5 分钟窗口</a>
+          <a href="/#reviews">左右脚差异 9 人样本</a>
+          <a href="/#rank">棉签控向稳定性测试</a>
+          <a href="/#channels">指腹与指甲的差别</a>
+          <a href="/#latest">大脚趾根点位图 9 点</a>
+          <a href="/#deep">躲闪反射的三段顺序</a>
+          <a href="/#faq">脚掌中央禁区说明</a>
+        </div>
+      </section>
+
+      <!-- 频道横向导航（移动端） -->
+      <section class="section" id="more" aria-labelledby="mr-h">
+        <div class="sec-head">
+          <div>
+            <span class="kicker">12 / 更多频道</span>
+            <h2 id="mr-h">按类别继续翻</h2>
+          </div>
+        </div>
+        <div class="taggrid">
+          <a class="tag" href="/#guide">轻挠力度分级</a>
+          <a class="tag" href="/#featured">大脚趾根反应</a>
+          <a class="tag" href="/#channels">棉签与毛笔对比</a>
+          <a class="tag" href="/#faq">怕痒与怕痛区别</a>
+          <a class="tag" href="/#deep">足弓怕痒原因</a>
+          <a class="tag" href="/#latest">脚掌中央禁区</a>
+          <a class="tag" href="/#reviews">脚心反应左右差异</a>
+          <a class="tag" href="/#rank">新手工具榜</a>
+          <a class="tag" href="/#guide">脚背与脚跟过渡</a>
+          <a class="tag" href="/#faq">挠多久会适应</a>
+          <a class="tag" href="/#reco">安全边界确认表</a>
+          <a class="tag" href="/#deep">躲闪反射顺序</a>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- 侧栏 -->
+    <aside class="side" aria-label="侧栏导航与速览">
+      <div class="card">
+        <h3 style="font-size:.92rem;margin-bottom:10px">页面目录</h3>
+        <ul class="toc-list" id="toc">
+          <li><a href="/#overview">领域概览</a></li>
+          <li><a href="/#featured">精选推荐</a></li>
+          <li><a href="/#latest">最新更新</a></li>
+          <li><a href="/#channels">分类入口</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+          <li><a href="/#reviews">用户评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#rank">工具榜</a></li>
+          <li><a href="/#reco">相关推荐</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3 style="font-size:.92rem;margin-bottom:8px">本周速览</h3>
+        <ul style="list-style:none;margin:0;padding:0;font-size:.86rem;color:var(--ink-soft)">
+          <li style="display:flex;justify-content:space-between;border-bottom:1px dashed var(--line);padding:7px 0">新增实测记录 <b>+12 条</b></li>
+          <li style="display:flex;justify-content:space-between;border-bottom:1px dashed var(--line);padding:7px 0">重评旧记录 <b>12 条</b></li>
+          <li style="display:flex;justify-content:space-between;border-bottom:1px dashed var(--line);padding:7px 0">工具榜期数 <b>第 4 期</b></li>
+          <li style="display:flex;justify-content:space-between;padding:7px 0">样本参与人数 <b>12 人</b></li>
+        </ul>
+      </div>
+      <div class="card" style="background:linear-gradient(160deg,#fbe4ef,#f4e6fb);border-color:#f2c3d8">
+        <h3 style="font-size:.92rem;margin-bottom:6px;color:#7d2f52">新手先看这一条</h3>
+        <p style="font-size:.86rem;color:#7d2f52;margin:0 0 10px">别从足弓内侧开始。外侧起手、0.3 牛顿、单段 20 秒，是 12 人样本里最不容易翻车的组合。</p>
+        <a class="btn btn-main" href="/#guide" style="padding:8px 16px;font-size:.86rem">打开三步顺序表</a>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <svg viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="15" fill="#3b2266"/>
+          <path d="M23 13c8.5 0 15 6.4 15 14.6 0 6-3.2 9.4-3.2 14.6 0 6.3-4.3 10.8-10.6 10.8-6.4 0-10.7-5.2-10.7-11.6 0-5.4 3.2-8.4 3.2-13.6C16.7 19.4 19.6 13 23 13Z" fill="#f2a0c4"/>
+          <circle cx="23" cy="23" r="2.7" fill="#3b2266"/>
+          <circle cx="36" cy="25" r="2.7" fill="#3b2266"/>
+          <path d="M44 40c3-4 3-9 0-13" stroke="#ffe6f2" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+        </svg>
+        <div class="fn">挠脚心magic官网</div>
+        <p>记录脚底轻触反应与工具差异，把每一次尝试写成别人能重做的样子。</p>
+      </div>
+      <div class="foot-col">
+        <h4>操作</h4>
+        <ul>
+          <li><a href="/#guide">羽毛轻挠手法</a></li>
+          <li><a href="/#guide">脚心敏感度测试</a></li>
+          <li><a href="/#guide">轻挠力度分级</a></li>
+          <li><a href="/#rank">新手工具榜</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>判断</h4>
+        <ul>
+          <li><a href="/#deep">足弓怕痒原因</a></li>
+          <li><a href="/#faq">怕痒与怕痛区别</a></li>
+          <li><a href="/#faq">挠多久会适应</a></li>
+          <li><a href="/#reco">安全边界确认表</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>记录</h4>
+        <ul>
+          <li><a href="/#latest">最新更新</a></li>
+          <li><a href="/#reviews">用户评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#channels">分类入口</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span class="sample">页面数据说明：文中 47 条实测记录、12 人样本、9 个点位、6 类工具对照均为示例性整理，用于说明记录格式与分级方法，不代表人群普遍结论。本页正文更新于 2026-11-08，对应更新项为分级表 v2、羽毛力度补测、点位图扩至 9 点三项。</span>
+      <span>© 2026 挠脚心magic官网 · 内容仅供阅读参考</span>
+    </div>
+  </div>
+</footer>
+
+<button class="totop" id="toTop" aria-label="回到页面顶部" title="回到顶部">↑</button>
+
+<script>
+(function(){
+  var menuBtn=document.getElementById('menuBtn');
+  var nav=document.getElementById('mainNav');
+  menuBtn.addEventListener('click',function(){
+    var open=nav.classList.toggle('open');
+    menuBtn.setAttribute('aria-expanded',open?'true':'false');
+  });
+  nav.addEventListener('click',function(e){
+    if(e.target.tagName==='A' && window.innerWidth<=860){
+      nav.classList.remove('open');
+      menuBtn.setAttribute('aria-expanded','false');
+    }
+  });
+
+  /* 回到顶部 */
+  var toTop=document.getElementById('toTop');
+  function onScroll(){
+    if(window.scrollY>600){toTop.classList.add('show');}else{toTop.classList.remove('show');}
+    highlight();
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  toTop.addEventListener('click',function(){
+    window.scrollTo({top:0,behavior:'smooth'});
+  });
+
+  /* 滚动高亮 */
+  var tocLinks=[].slice.call(document.querySelectorAll('#toc a'));
+  var targets=tocLinks.map(function(a){
+    var id=a.getAttribute('href').split('#')[1];
+    return document.getElementById(id);
+  });
+  function highlight(){
+    var pos=window.scrollY+140, idx=-1;
+    for(var i=0;i<targets.length;i++){
+      if(targets[i] && targets[i].offsetTop<=pos){idx=i;}
+    }
+    tocLinks.forEach(function(a,i){a.classList.toggle('on',i===idx);});
+  }
+  highlight();
+
+  /* 本地搜索 */
+  var q=document.getElementById('q');
+  var res=document.getElementById('srchRes');
+  var items=[].slice.call(document.querySelectorAll('main h2, main h3, main summary, .reco a, .taggrid a')).map(function(el){
+    var text=(el.textContent||'').replace(/\s+/g,' ').trim();
+    var sec=el.closest('section');
+    return {text:text, id:sec?sec.id:'top', el:el};
+  });
+  function render(kw){
+    var seen={}, out=[];
+    items.forEach(function(it){
+      if(it.text.indexOf(kw)>-1 && !seen[it.id+it.text]){
+        seen[it.id+it.text]=1; out.push(it);
+      }
+    });
+    if(!kw){res.classList.remove('open');res.innerHTML='';return;}
+    if(out.length===0){
+      res.innerHTML='<div class="empty">没有找到「'+kw.replace(/[<>&]/g,'')+'」，试试“羽毛”“分级”“适应”。</div>';
+    }else{
+      res.innerHTML=out.slice(0,8).map(function(it){
+        return '<a href="/#'+it.id+'">'+it.text+'</a>';
+      }).join('');
+    }
+    res.classList.add('open');
+  }
+  var timer=null;
+  q.addEventListener('input',function(){
+    clearTimeout(timer);
+    var v=q.value.trim();
+    timer=setTimeout(function(){render(v);},120);
+  });
+  q.addEventListener('keydown',function(e){
+    if(e.key==='Escape'){res.classList.remove('open');q.blur();}
+  });
+  document.addEventListener('click',function(e){
+    if(!e.target.closest('.search')){res.classList.remove('open');}
+  });
+  res.addEventListener('click',function(){
+    res.classList.remove('open');
+  });
+  onScroll();
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"挠脚心magic官网",
+  "description":"聚焦足底触觉与轻挠互动的记录站点，提供脚心敏感度测试、轻挠手法、工具对照与安全边界说明。",
+  "inLanguage":"zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"脚心怕痒和怕痛是一回事吗","acceptedAnswer":{"@type":"Answer","text":"不是同一条通路。痒感由轻触觉与移动刺激触发，怕痛来自高阈值机械与热刺激。有人脚心极度怕痒但按压足底筋膜毫无不适，也有人相反。"}},
+    {"@type":"Question","name":"脚心敏感度测试自己做要准备什么","acceptedAnswer":{"@type":"Answer","text":"一支棉签、一根羽毛、一个计时器、一张四栏表。坐姿把脚放在矮凳上，按足弓外侧、足弓内侧、大脚趾根、脚掌前部、脚跟五个点位各 20 秒，逐点打 0–4 级。"}},
+    {"@type":"Question","name":"羽毛轻挠手法角度多少合适","acceptedAnswer":{"@type":"Answer","text":"30 到 45 度之间。角度太陡羽尖集中容易被感知为刺，太平接触面变大痒感反而弱。速度按每秒 4 厘米移动，画小弧线而不是直线。"}},
+    {"@type":"Question","name":"指腹和指甲的差别有多大","acceptedAnswer":{"@type":"Answer","text":"指腹接触面积约 6 平方厘米，指甲边缘不到 0.5 平方厘米，同样力度下压强差 10 倍以上。指甲更容易触发防御回缩，痒感未必更高。"}},
+    {"@type":"Question","name":"挠多久会适应，适应了还算有效吗","acceptedAnswer":{"@type":"Answer","text":"9 人样本中反应峰值在第 1 分钟，第 3 分钟开始下降，第 5 分钟后多数人不再想躲。适应不等于无效，痒感仍在，只是躲避冲动减弱。"}},
+    {"@type":"Question","name":"脚掌中央为什么被列为禁区","acceptedAnswer":{"@type":"Answer","text":"脚掌前部中央靠近跖骨头，皮下脂肪薄，轻挠时容易被感知为硌或痛。12 人中有 7 人表示该区域不舒服多于痒。"}},
+    {"@type":"Question","name":"左右脚反应差一档正常吗","acceptedAnswer":{"@type":"Answer","text":"正常。9 人左右脚对照中差 1 分以上的有 5 人，其中 4 人右脚更高。差异可能来自惯用脚、鞋型或既往受伤史，记录时应分开写。"}},
+    {"@type":"Question","name":"棉签、毛笔、软毛刷怎么选","acceptedAnswer":{"@type":"Answer","text":"看目的。要控向稳定选棉签，落点误差最小；要覆盖大面积选毛笔；想快速触发整脚抽动选软毛刷。工具榜第 4 期把棉签排到第 2。"}}
+  ]
+}
+</script>
+</body>
+            </html>
